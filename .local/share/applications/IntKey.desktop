@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/home/arwagner/bin/java/open-delta-1.0/bin/Intkey.sh %f
+Icon=/home/arwagner/.icons/arwagner/applications/Delta_red.png
+Name=IntKey
+Comment=Taxonomy Editor
+NoDisplay=false
+Name[en_US]=IntKey

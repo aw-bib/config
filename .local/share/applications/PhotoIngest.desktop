@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/home/arwagner/bin/generic/PhotoIngest %f
+Icon=/home/arwagner/.icons/aw-gnome/scalable/apps/PhotoIngest.png
+Name=PhotoIngest
+Comment=Custom definition for PhotoIngest
+NoDisplay=false
+Categories=GTK;GNOME;Utility;Photo
