@@ -1,0 +1,19 @@
+#!/bin/sh
+echo Creating links from osx Icon theme
+echo This requires osx icon theme to be installed properly.
+echo This theme is available from
+echo http://n00b-un-2.deviantart.com/art/OSX-Icon-Theme-for-Gnome-279284710 
+
+ln -s ../osx/CS5 .
+ln -s ../osx/categories .
+ln -s ../osx/devices .
+ln -s ../osx/emblems .
+ln -s ../osx/index.theme .
+ln -s ../osx/mimes .
+ln -s ../osx/notifications .
+ln -s ../osx/panel .
+ln -s ../osx/places .
+ln -s ../osx/social .
+ln -s ../osx/status .
+ln -s ../osx/stock .
+ln -s ../osx/tools .
