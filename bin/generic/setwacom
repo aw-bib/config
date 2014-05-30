@@ -1,0 +1,86 @@
+#!/bin/bash
+
+# Name of the devices
+DEVICE="Wacom Intuos4 6x9"
+
+# Subdevices used by the tablet
+ERASER="$DEVICE eraser"
+CURSOR="$DEVICE cursor"
+PAD="$DEVICE pad"
+STYLUS="$DEVICE"
+
+# Remove the kernel module before setting the key icons
+/usr/bin/sudo /sbin/modprobe -r wacom
+
+# Just showing initialisation
+for (( i=1; i < 9; i=i+2 ))
+do 
+	sudo /usr/local/bin/intuos4-led-config --lefthanded --button $i --icon DebianLogo
+done
+for (( i=2; i < 9; i=i+2 ))
+do 
+	sudo /usr/local/bin/intuos4-led-config --lefthanded --button $i --icon WacomLogo
+done
+sleep 1
+
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 1 --image $HOME/.intuos4/icons/undo.png
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 2 --image $HOME/.intuos4/icons/clone.png 
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 3 --image $HOME/.intuos4/icons/brush.png
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 4 --image $HOME/.intuos4/icons/fgbg.png
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 5 --image $HOME/.intuos4/icons/shift.png
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 6 --icon Ctrl
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 7 --icon Alt
+sudo /usr/local/bin/intuos4-led-config --lefthanded --button 8 --image $HOME/.intuos4/icons/save.png
+
+sleep 1
+# Reload the module so we have it available for further setup
+/usr/bin/sudo /sbin/modprobe wacom
+sleep 1
+
+# Rotate the board for left handed use. In older versions of xsetwacom
+# like the one in squeeze Rotate is local to each tool
+xsetwacom set "$ERASER" Rotate half
+xsetwacom set "$CURSOR" Rotate half
+xsetwacom set "$PAD"    Rotate half
+xsetwacom set "$STYLUS" Rotate half
+
+
+# Now assign the express keys
+
+# Center wheel button
+xsetwacom set "$PAD" Button 1  "key 1"
+# The scroll wheel is just the usual mouse wheel, handle it by
+# assigning actions per program instead of AbsWUp/AbsWDn which does
+# not work.
+
+# Note 1: the different numbering compared to the button OLEDs
+# Note 2: it seems that key names reflect us keyboards ie. z==y
+xsetwacom set "$PAD" Button 2  "key ctrl s"
+xsetwacom set "$PAD" Button 3  "key alt"
+xsetwacom set "$PAD" Button 8  "key ctrl"
+xsetwacom set "$PAD" Button 9  "key shift"
+
+xsetwacom set "$PAD" Button 10  "key x"
+xsetwacom set "$PAD" Button 11  "key p"
+xsetwacom set "$PAD" Button 12  "key c"
+xsetwacom set "$PAD" Button 13  "key ctrl y"
+
+#--------------------------------------------------------------
+## xsetwacom set "$PAD" Button2  "key ctrl s"
+## xsetwacom set "$PAD" Button3  "key alt"
+## xsetwacom set "$PAD" Button4  "key ctrl"
+## xsetwacom set "$PAD" Button5  "key shift"
+## xsetwacom set "$PAD" Button6  "key x"
+## xsetwacom set "$PAD" Button7  "key p"
+## xsetwacom set "$PAD" Button8  "key y"
+## xsetwacom set "$PAD" Button9  "key ctrl y"
+
+
+#xsetwacom set "$PAD" Button2  "key A"
+#xsetwacom set "$PAD" Button3  "key B"
+#xsetwacom set "$PAD" Button4  "key C"
+#xsetwacom set "$PAD" Button5  "key D"
+#xsetwacom set "$PAD" Button6  "key E"
+#xsetwacom set "$PAD" Button7  "key F"
+#xsetwacom set "$PAD" Button8  "key G"
+#xsetwacom set "$PAD" Button9  "key H"
