@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="pointers" version="1.0">
+  <property name="Wacom_Intuos4_6x9_stylus" type="empty">
+    <property name="Properties" type="empty">
+      <property name="Wacom_Rotation" type="int" value="3"/>
+    </property>
+    <property name="RightHanded" type="bool" value="false"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+  <property name="Wacom_Intuos4_6x9_eraser" type="empty">
+    <property name="RightHanded" type="bool" value="false"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+  <property name="Wacom_Intuos4_6x9_cursor" type="empty">
+    <property name="RightHanded" type="bool" value="false"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+  <property name="Wacom_Intuos4_6x9_pad" type="empty">
+    <property name="RightHanded" type="bool" value="false"/>
+    <property name="Threshold" type="int" value="4"/>
+    <property name="Acceleration" type="double" value="2.000000"/>
+  </property>
+</channel>

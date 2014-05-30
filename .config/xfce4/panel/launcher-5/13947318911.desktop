@@ -1,0 +1,11 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/home/arwagner/GNUstep/Choices/Apps/Office/Darktable/AppRun %f
+Icon=/opt/photo/share/darktable/pixmaps/dt_logo_128x128.png
+Name=Darkroom
+Comment=Darktable photo workflow software in Darkroom
+NoDisplay=false
+Name[en_US]=Darkroom
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/Darkroom.desktop

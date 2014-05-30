@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/home/arwagner/GNUstep/Choices/Apps/Chess/scid-cvs/AppRun %f
+Icon=/home/arwagner/GNUstep/Choices/Apps/Chess/scid-cvs/AppIcon.xpm
+Name=Scid
+Comment=Scid Chess Database
+NoDisplay=false
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/Scid.desktop
