@@ -1,0 +1,19 @@
+#!/bin/sh
+#
+# Make the usual tmp-directory structrure
+#
+mkdir     -p /tmp/$USER/
+chmod 700    /tmp/$USER 
+mkdir        /tmp/$USER/thumbnails
+mkdir        /tmp/$USER/xvpics
+mkdir        /tmp/$USER/Trash
+mkdir        /tmp/$USER/tmp
+mkdir        /tmp/$USER/temp
+mkdir     -p /tmp/$USER/.gimp-2.2/tmp
+rm $HOME/tmp
+rm $HOME/.thumbnails
+rm $HOME/.xvpics
+ln -sf /tmp/$USER            $HOME/tmp
+ln -sf /tmp/$USER/thumbnails $HOME/.thumbnails
+ln -sf /tmp/$USER/xvpics     $HOME/.xvpics
+
