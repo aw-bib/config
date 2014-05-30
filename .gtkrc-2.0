@@ -1,0 +1,15 @@
+style "xfdesktop-icon-view" {
+    XfdesktopIconView::label-alpha = 10
+    base[NORMAL] = "#000000"
+    base[SELECTED] = "#71B9FF"
+    base[ACTIVE] = "#71B9FF"
+    fg[NORMAL] = "#fcfcfc"
+    fg[SELECTED] = "#ffffff"
+    fg[ACTIVE] = "#ffffff"
+	 XfdesktopIconView::cell-spacing = 6
+	 XfdesktopIconView::cell-padding = 6
+	 XfdesktopIconView::cell-text-width-proportion = 2.5
+}
+widget_class "*XfdesktopIconView*" style "xfdesktop-icon-view"
+
+
