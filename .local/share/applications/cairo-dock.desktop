@@ -1,0 +1,16 @@
+[Desktop Entry]
+Version=1.0
+Encoding=UTF-8
+Name=Cairo Dock
+Name[en_US]=Cairo Dock
+Type=Application
+Exec=/usr/bin/cairo-dock
+Terminal=false
+Icon=cairo-dock
+Comment=Cairo Dock
+Comment[en_US]=Cairo Dock
+NoDisplay=false
+Categories=Utility;
+Hidden=true
+X-GNOME-Autostart-enabled=true
+

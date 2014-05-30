@@ -1,0 +1,12 @@
+#!/usr/bin/env xdg-open
+
+[Desktop Entry]
+Encoding=UTF-8
+Version=1.0
+Type=Application
+Exec=/home/arwagner/bin/java/MediathekViewer/MediathekView.sh
+Icon=/home/arwagner/bin/java/MediathekViewer/info/MediathekView.svg
+Name=MediathekViewer 4
+Comment=Download arte/ZDF/ARD... Mediathek
+NoDisplay=false
+Name[en_US]=MediathekViewer 4
