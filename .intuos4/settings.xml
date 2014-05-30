@@ -1,0 +1,108 @@
+<intuos4settings device="Wacom Intuos4 6x9 pad">
+	<profiles default="GIMP">
+		<profile name="Demo" lefthanded="true">
+			<button number="1">
+				<oled type="icon" name="ButtonOne"></oled>
+				<keystroke key="1"></keystroke>
+			</button>
+			<button number="2">
+				<oled type="icon" name="ButtonTwo"></oled>
+				<keystroke key="2"></keystroke>
+			</button>
+			<button number="3">
+				<oled type="icon" name="ButtonThree"></oled>
+				<keystroke key="3"></keystroke>
+			</button>
+			<button number="4">
+				<oled type="icon" name="ButtonFour"></oled>
+				<keystroke key="4"></keystroke>
+			</button>
+			<button number="5">
+				<oled type="icon" name="ButtonFive"></oled>
+				<keystroke key="5"></keystroke>
+			</button>
+			<button number="6">
+				<oled type="icon" name="ButtonSix"></oled>
+				<keystroke key="6"></keystroke>
+			</button>
+			<button number="7">
+				<oled type="icon" name="ButtonSeven"></oled>
+				<keystroke key="7"></keystroke>
+			</button>
+			<button number="8">
+				<oled type="icon" name="ButtonEight"></oled>
+				<keystroke key="8"></keystroke>
+			</button>
+		</profile>
+		<profile name="Image Demo" lefthanded="False">
+			<button number="1">
+				<oled type="image" name="~/.intuos4/icons/icon-cut.png"></oled>
+				<keystroke key="ctrl x"></keystroke>
+			</button>
+			<button number="2">
+				<oled type="image" name="~/.intuos4/icons/icon-copy.png"></oled>
+				<keystroke key="ctrl c"></keystroke>
+			</button>
+			<button number="3">
+				<oled type="image" name="~/.intuos4/icons/icon-paste.png"></oled>
+				<keystroke key="ctrl v"></keystroke>
+			</button>
+			<button number="4">
+				<oled type="icon" name="Save"></oled>
+				<keystroke key="">ctrl s</keystroke>
+			</button>
+			<button number="5">
+				<oled type="icon" name="Blank"></oled>
+				<keystroke key=""></keystroke>
+			</button>
+			<button number="6">
+				<oled type="image" name="~/.intuos4/icons/icon-tux-inverse.png"></oled>
+				<keystroke key=""></keystroke>
+			</button>
+			<button number="7">
+				<oled type="icon" name="DebianLogo"></oled>
+				<keystroke key=""></keystroke>
+			</button>
+			<button number="8">
+				<oled type="icon" name="WacomLogo"></oled>
+				<keystroke key=""></keystroke>
+			</button>
+			<wheel button="ctrl z"></wheel>
+		</profile>
+		<profile name="GIMP" lefthanded="true">
+			<button number="1">
+				<oled type="icon" name="Undo"></oled>
+				<keystroke key="ctrl y"></keystroke>
+			</button>
+			<button number="2">
+				<oled type="icon" name="Redo"></oled>
+				<keystroke key="ctrl z"></keystroke>
+			</button>
+			<button number="3">
+				<oled type="icon" name="ZoomIn"></oled>
+				<keystroke key="+"></keystroke>
+			</button>
+			<button number="4">
+				<oled type="icon" name="ZoomOut"></oled>
+				<keystroke key="-"></keystroke>
+			</button>
+			<button number="5">
+				<oled type="icon" name="Save"></oled>
+				<keystroke key="ctrl s"></keystroke>
+			</button>
+			<button number="6">
+				<oled type="icon" name="Alt"></oled>
+				<keystroke key="alt"></keystroke>
+			</button>
+			<button number="7">
+				<oled type="icon" name="Ctrl"></oled>
+				<keystroke key="ctrl"></keystroke>
+			</button>
+			<button number="8">
+				<oled type="icon" name="ArrowUp"></oled>
+				<keystroke key="shift"></keystroke>
+			</button>
+			<wheel button="Ctrl E"></wheel>
+		</profile>
+	</profiles>
+</intuos4settings>
