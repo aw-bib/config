@@ -1,0 +1,163 @@
+/* PolicyKit Authentication Dialog */
+.polkit-dialog-user-layout {
+	padding-left: 10px;
+	spacing: 10px;
+}
+
+.polkit-dialog-user-layout:rtl {
+	padding-left: 0px;
+	padding-right: 10px;
+}
+
+.polkit-dialog-user-root-label {
+  color: #202020;
+}
+
+.network-dialog-show-password-checkbox {
+	padding-top: 5px;
+	padding-bottom: 5px;
+	font-size: 10pt;
+	color: white;
+	spacing: 10px;
+}
+
+.network-dialog-secret-table {
+	spacing-rows: 15px;
+}
+
+.prompt-dialog {
+    /* this is the width of the entire modal popup */
+    width: 500px;
+}
+
+.prompt-dialog-main-layout {
+    spacing: 24px;
+    padding: 10px;
+}
+
+.prompt-dialog-message-layout {
+    spacing: 16px;
+}
+
+.prompt-dialog-headline {
+    font-size: 12pt;
+    font-weight: bold;
+    color: #666666;
+}
+
+.prompt-dialog-password-label:ltr {
+    padding-right: 0.5em;
+}
+
+.prompt-dialog-password-label:rtl {
+    padding-left: 0.5em;
+}
+
+.prompt-dialog-password-entry {
+    background-gradient-start: rgb(236,236,236);
+    background-gradient-end: white;
+    background-gradient-direction: vertical;
+    color: #202020;
+    selected-color: white;
+    border-radius: 5px;
+    border: 2px solid #555753;
+}
+
+.prompt-dialog-password-entry:focus {
+    border: 2px solid #3465a4;
+}
+
+.prompt-dialog-password-entry .capslock-warning {
+    icon-size: 16px;
+    warning-color: #999;
+    padding: 0 4px;
+}
+
+.prompt-dialog-error-label {
+    font-size: 10pt;
+    color: #ffff00;
+    padding-bottom: 8px;
+}
+
+.prompt-dialog-info-label {
+    font-size: 10pt;
+    padding-bottom: 8px;
+}
+
+/* intentionally left transparent to avoid dialog changing size */
+.prompt-dialog-null-label {
+    font-size: 10pt;
+    color: rgba(0,0,0,0);
+    padding-bottom: 8px;
+}
+
+/* backwards compatibility for GS 3.2 */
+.polkit-dialog {
+  /* this is the width of the entire modal popup */
+  width: 500px;
+  border: 2px solid rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 8px 12px 12px rgba(0,0,0,0.4);
+  background-color: #dedede;
+  border-radius: 6px;
+  color: #202020;
+}
+
+.polkit-dialog-main-layout {
+  spacing: 24px;
+  padding: 10px;
+}
+
+.polkit-dialog-message-layout {
+  spacing: 16px;
+}
+
+.polkit-dialog-headline {
+  font-size: 10pt;
+  font-weight: bold;
+  color: #202020;
+}
+
+.polkit-dialog-description {
+  font-size: 10pt;
+  color: #202020;
+}
+
+.polkit-dialog-password-label:ltr {
+  padding-right: 0.5em;
+}
+
+.polkit-dialog-password-label:rtl {
+  padding-left: 0.5em;
+}
+
+.polkit-dialog-password-entry {
+  background-gradient-start: rgba(255,255,255,0.7);
+  background-gradient-end: rgba(255,255,255,0.9);
+  background-gradient-direction: vertical;
+  color: #202020;
+  border-radius: 4px;
+  border: 2px solid #555753;
+  min-height: 20px;
+}
+
+.polkit-dialog-password-entry:focus {
+  border: 2px solid #3465a4;
+}
+
+.polkit-dialog-error-label {
+  font-size: 10pt;
+  color: #ffff00;
+  padding-bottom: 8px;
+}
+
+.polkit-dialog-info-label {
+  font-size: 10pt;
+  padding-bottom: 8px;
+}
+
+/* intentionally left transparent to avoid dialog changing size */
+.polkit-dialog-null-label {
+  font-size: 10pt;
+  color: rgba(0,0,0,0);
+  padding-bottom: 8px;
+}

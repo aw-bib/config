@@ -1,0 +1,101 @@
+/* Modal Dialogs */
+.modal-dialog {
+	border: 2px solid rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 8px 12px 12px rgba(0,0,0,0.4);
+  background-color: #dedede;
+  border-radius: 6px;
+  color: #202020;
+	font-size: 10pt; 
+	padding-right: 42px;
+	padding-left: 42px;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.modal-dialog-button-box {
+	spacing: 21px;
+}
+
+.modal-dialog-button,
+.modal-dialog-button:hover {
+	border-radius: 4px;
+	font-size: 10pt;
+	color: #2c2c2c;
+
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 4px 32px 5px; 
+  border: 1px solid rgba(151,151,151,1);
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(255,255,255,1);
+	background-gradient-end: rgba(242,242,242,1); 
+}
+
+.modal-dialog-button:active,
+.modal-dialog-button:pressed,
+.modal-dialog-button:active:hover,
+.modal-dialog-button:pressed:hover {
+  border: 1px solid rgba(69,99,151,1.0);
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(173,202,250,1.0);
+	background-gradient-end: rgba(120,165,244,1.0);  
+}
+
+.modal-dialog-button:disabled {
+	color: rgb(60, 60, 60);
+}
+
+.modal-dialog-button:focus {
+	border: 0px solid rgba(255,255,255,0.0);
+	box-shadow: 0px 0px 2px 2px rgba(0,0,0,0.5);
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(245,245,245,1.0);
+	background-gradient-end: rgba(232,232,232,1.0); 
+	padding: 3px 31px 4px;
+}
+
+/* Run Dialog */
+.run-dialog-label {
+	font-size: 10pt;
+  color: #202020;
+	padding-bottom: 6px;
+}
+
+.run-dialog-error-label {
+	font-size: 9pt;
+	color: white;
+}
+
+.run-dialog-error-box {
+	padding-top: 15px;
+	spacing: 5px;
+}
+
+.run-dialog-entry {
+	font-size: 10pt;
+	font-weight: normal;
+	width: 23em;
+	selection-background-color: #808080;
+  padding: 4px; 
+  color: #202020; 
+  border: 1px solid rgba(0,0,0,0.6);
+  background-gradient-direction: vertical;
+  background-gradient-start: rgba(255,255,255,0.7);
+  background-gradient-end: rgba(255,255,255,0.9);
+  box-shadow: inset 0px -1px 1px 0px rgba(255,255,255,0.2);
+  border-radius: 4px;
+  caret-color: #545454;
+  caret-size: 1px;		
+}
+
+.run-dialog {
+  border: 2px solid rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 8px 12px 12px rgba(0,0,0,0.4);
+  background-color: #dedede;
+  border-radius: 6px;	
+
+	padding-right: 21px;
+	padding-left: 21px;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}

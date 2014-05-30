@@ -1,0 +1,99 @@
+/* App Switcher */
+#altTabPopup {
+	padding: 8px;
+	spacing: 16px;
+}
+
+.switcher-list {
+	border: 2px solid rgba(255, 255, 255, 0.4);
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(0, 0, 0, 0.8);
+	background-gradient-end: rgba(0, 0, 0, 0.8);
+	box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.3);
+	border-radius: 4px;
+	padding: 20px;
+	font-size: 10pt;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.switcher-list-item-container {
+	spacing: 8px;
+}
+
+.thumbnail-scroll-gradient-left {
+	background-gradient-direction: horizontal;
+	background-gradient-start: rgba(51, 51, 51, 1.0);
+	background-gradient-end: rgba(51, 51, 51, 0);
+	border-radius: 24px;
+	border-radius-topright: 0px;
+	border-radius-bottomright: 0px;
+	width: 60px;
+}
+
+.thumbnail-scroll-gradient-right {
+	background-gradient-direction: horizontal;
+	background-gradient-start: rgba(51, 51, 51, 0);
+	background-gradient-end: rgba(51, 51, 51, 1.0);
+	border-radius: 24px;
+	border-radius-topleft: 0px;
+	border-radius-bottomleft: 0px;
+	width: 60px;
+}
+
+.switcher-list .item-box {
+	padding: 8px;
+	border-radius: 8px;
+}
+
+.switcher-list .item-box:outlined {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(162, 184, 202, 0.9);
+	background-gradient-end: rgba(117, 145, 169, 0.9);
+	box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	color: rgba(255, 255, 255, 1.0);
+	padding: 6px;
+}
+
+.switcher-list .item-box:selected {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(162, 184, 202, 0.9);
+	background-gradient-end: rgba(117, 145, 169, 0.9);
+	box-shadow: inset 0px 0px 1px 1px rgba(255, 255, 255, 0.3);
+	border-radius: 3px;
+	color: rgba(255, 255, 255, 1.0);
+}
+
+.switcher-list .thumbnail-box {
+	padding: 2px;
+	spacing: 4px;
+}
+
+.switcher-list .thumbnail {
+	width: 256px;
+}
+
+.switcher-list .separator {
+	width: 1px;
+	background: rgba(255, 255, 255, 0.33);
+}
+
+.ripple-box {
+	width: 52px;
+	height: 52px;
+	background-image: url("corner-ripple-ltr.png");
+}
+
+.ripple-box:rtl {
+	background-image: url("corner-ripple-rtl.png");
+}
+
+.switcher-arrow {
+	border-color: rgba(0, 0, 0, 0);
+	color: #e2e2e2;
+}
+
+.switcher-arrow:highlighted {
+	border-color: rgba(0, 0, 0, 0);
+	color: white;
+}

@@ -1,0 +1,10 @@
+{ 
+   "shell-theme": {
+   "name": "Zukitwo-Cupertino",
+   "author": "Manuel Laggner",
+   "version": "0.4.2",
+   "type":   "custom",
+   "thumbnail": "preview.jpg",
+   "url": "blog.laggner.at"
+    }
+}

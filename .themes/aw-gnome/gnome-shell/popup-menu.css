@@ -1,0 +1,152 @@
+/* PopupMenu */
+
+.popup-menu-boxpointer {
+	-arrow-base: 38px;    /* to get the box left-aligned on icons*/
+  border: 2px solid rgba(88, 88, 88, 0.5);
+  box-shadow: 0px 4px 8px 4px rgba(0,0,0,0.4);
+  background-color: #f9f9f9; 
+  border-radius: 6px;
+}
+
+.popup-menu {
+	color: #202020;
+	font-size: 10pt;
+	min-width: 85px;
+}
+
+.popup-submenu-menu-item:open {
+	background-color: rgba(192,192,192,1);
+}
+
+.popup-sub-menu { /* Don't use border-radius or box-shadow here. It causes the shell to crash. */
+	background-color: #dde1e8;
+}
+
+.popup-sub-menu .popup-menu-item:ltr {
+	padding-right: 0em;
+}
+
+.popup-sub-menu .popup-menu-item:rtl {
+	padding-left: 0em;
+}
+
+.popup-sub-menu StScrollBar {
+	padding: 2px;
+}
+
+.popup-sub-menu StScrollBar StBin#trough {
+	border-width: 0px;
+}
+
+.popup-sub-menu StScrollBar StBin#vhandle {
+	background-color: #4c4c4c;
+	border-width: 0px;
+}
+
+.popup-combo-menu {
+	background-color: rgba(128,128,128,1); 
+	padding: 1em 0em;
+	color: #202020;	
+	font-size: 10pt;
+	border: 1px solid #5f5f5f;
+	border-radius: 4px;
+}
+
+/* The remaining popup-menu sizing is all done in ems, so that if you
+ * override .popup-menu.font-size, everything else will scale with it.
+ */
+.popup-menu-content {
+	padding: 1em 0em;
+	color: #202020;
+}
+
+.popup-menu-item {
+	font-weight: normal;
+	font-size: 10pt;
+  padding: 0.3em 1.75em; 
+ 	spacing: 1em; 
+	color: #202020;
+}
+
+.popup-menu-item:active {
+	background-gradient-direction: vertical;
+	background-gradient-start: rgba(113,131,248,1);
+  background-gradient-end: rgba(68,85,246,1);
+  color: #fff;
+}
+
+.popup-menu-item:insensitive {
+	color: #9f9f9f; 
+}
+
+.popup-image-menu-item {
+}
+
+.popup-combobox-item {
+	spacing: 1em;
+	color: #202020;
+}
+
+.popup-separator-menu-item {
+	-gradient-height: 1px;
+	-gradient-start: rgba(224,224,224,1);
+	-gradient-end: rgba(224,224,224,1); 
+	height: 1em;
+}
+
+.popup-alternating-menu-item:alternate {
+	font-weight: bold;
+}
+
+.popup-slider-menu-item {
+	height: 1em;
+	min-width: 15em;
+	-slider-height: 4px;
+  -slider-background-color: #ffffff; 
+	-slider-border-color: #bfbfbf; 
+	-slider-active-background-color: rgb(75,133,226); 
+	-slider-active-border-color: rgb(162,184,202);
+	-slider-border-width: 1px;
+	-slider-handle-radius: 0.5em;
+}
+
+.popup-device-menu-item {
+	spacing: .5em;
+}
+
+.popup-inactive-menu-item {
+	font-weight: normal;
+	color: #666;
+}
+
+.popup-subtitle-menu-item {
+	font-weight: bold;
+}
+
+.popup-menu-icon {
+	icon-size: 1.14em;
+}
+
+/* Switches (to be used in menus) */
+.toggle-switch {
+	width: 65px;
+	height: 22px;
+}
+
+.toggle-switch-us {
+	background-image: url("img/off.png");
+}
+.toggle-switch-us:checked {
+	background-image: url("img/on.png");
+}
+
+.toggle-switch-intl {
+	background-image: url("img/off.png");
+}
+.toggle-switch-intl:checked {
+	background-image: url("img/on.png");
+}
+
+.nm-menu-item-icons {
+	spacing: .5em;
+}

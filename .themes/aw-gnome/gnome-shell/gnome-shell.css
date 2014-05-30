@@ -1,0 +1,48 @@
+/* Copyright 2009, Red Hat, Inc.
+ *
+ * Portions adapted from Mx's data/style/default.css
+ *   Copyright 2009 Intel Corporation
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms and conditions of the GNU Lesser General Public License,
+ * version 2.1, as published by the Free Software Foundation.
+ *
+ * This program is distributed in the hope it will be useful, but WITHOUT ANY
+ * WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+ * FOR A PARTICULAR PURPOSE.  See the GNU Lesser General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU Lesser General Public License
+ * along with this program; if not, write to the Free Software Foundation,
+ * Inc., 51 Franklin St - Fifth Floor, Boston, MA 02110-1301 USA.
+ */
+
+/* 
+  Zukitwo-Cupertino Gnome-shell theme by Manuel Laggner 
+  based on Zukitwo by lassekongo83 - http://browse.deviantart.com/customization/skins/linuxutil/desktopenv/gnome/gtk3/#/d3df2ot
+  
+  and some images/ideas from
+  Orta - http://browse.deviantart.com/customization/skins/linuxutil/desktopenv/gnome/gnome/?qh=&section=&q=#/d3f9qp5
+  Smooth Inset - http://browse.deviantart.com/customization/skins/linuxutil/desktopenv/gnome/gnome/?qh=&section=&q=#/d3b52v3
+  Nord - http://browse.deviantart.com/customization/skins/linuxutil/desktopenv/gnome/gnome/?qh=&section=&q=#/d3jl36q
+  Faience - http://browse.deviantart.com/customization/skins/linuxutil/desktopenv/gnome/gnome/?qh=&section=&q=#/d47vmgg
+*/
+
+@import url("app-switcher.css");
+@import url("apps.css");
+@import url("buttons.css");
+@import url("calendar.css");
+@import url("dash.css");
+@import url("end-session.css");
+@import url("initial.css");
+@import url("keyboard.css");
+@import url("lg.css");
+@import url("magnifier.css");
+@import url("message.css");
+@import url("modal.css");
+@import url("mount.css");
+@import url("panel.css");
+@import url("polkit.css");
+@import url("popup-menu.css");
+@import url("overview.css");
+@import url("ws-switcher.css");
