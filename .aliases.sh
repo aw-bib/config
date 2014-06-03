@@ -41,21 +41,19 @@ case "$HOSTTYPE" in
 		alias ls="ls --color=tty"
 		alias ll="ls -ali --color=tty"
 		alias l.="ls -d .[a-zA-Z]* --color=tty"
-		if [ `hostname` = "ingata.homelinux.net" ]; then 
-			alias gpi='xrename GNUplot;/usr/bin/gnuplot;xrename "Terminal"'
-		else
-			alias gpi='xrename GNUplot;/usr/local/gnuplot40-rh/bin/gnuplot;xrename Terminal'
-		fi
-		 ;;
   *HP-UX*)
 		alias make="gmake"
 		;;
   *)
-		alias ls="ls"
+		case "$OSTYPE" in
+			*linux*)
+				 alias ll="ls --color=tty" # needs GNU style ls
+			;;
+			*freebsd*)
+			;;
 		alias ll="ls -ali"
 		alias l.="ls -d .[a-zA-Z]*"
 		alias make="gmake"
-		alias build="gmake clean; gmake"
 		alias mc="mc -b"
 		echo "*"
 		 ;;
