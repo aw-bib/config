@@ -51,7 +51,7 @@ case "$HOSTTYPE" in
 		alias make="gmake"
 		;;
   *)
-		alias ls="ls --color=tty"
+		alias ls="ls"
 		alias ll="ls -ali"
 		alias l.="ls -d .[a-zA-Z]*"
 		alias make="gmake"
