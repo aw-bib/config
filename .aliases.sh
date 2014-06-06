@@ -41,6 +41,7 @@ case "$HOSTTYPE" in
 		alias ls="ls --color=tty"
 		alias ll="ls -ali --color=tty"
 		alias l.="ls -d .[a-zA-Z]* --color=tty"
+		;;
   *HP-UX*)
 		alias make="gmake"
 		;;
@@ -51,6 +52,7 @@ case "$HOSTTYPE" in
 			;;
 			*freebsd*)
 			;;
+		esac
 		alias ll="ls -ali"
 		alias l.="ls -d .[a-zA-Z]*"
 		alias make="gmake"
