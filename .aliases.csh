@@ -112,3 +112,10 @@ alias sps    "paper hep-ph0201233"
 alias pd..   "pd .."
 
 alias nav  "exo-open "
+
+# Some terminal aliases. It comes in handy to have some terms with
+# different colours. Names are just conventions from a project.
+alias gitterm 'xterm -bg lightgreen -fg black'
+alias cdsterm 'xterm -bg yellow -fg black'
+alias pyterm  'xterm -bg black -fg white -e ipython'
+
