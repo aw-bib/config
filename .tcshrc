@@ -1,0 +1,118 @@
+#!/bin/tcsh
+#
+# Setup for tcsh
+# 
+# Last update: Wed, 2004/03/10, 15:31:16
+#
+
+if ( $USER == "arwagner" ) then
+   # vi-like keybindings
+   bindkey -v
+endif
+
+# In insert mode: Search the history like bash
+bindkey -b C-r     i-search-back
+bindkey -b C-R     i-search-back
+bindkey -b C-e     dabbrev-expand
+bindkey -b C-E     dabbrev-expand
+
+bindkey -k up      history-search-backward
+bindkey -k down    history-search-forward
+
+# remove coredumps automatically by setting theire maximum size to 0
+limit coredumpsize 0
+
+# visible bell (like in vim)
+set visiblebell
+
+# Prompt: (cmdno) full path>  [machinename]
+set prompt='(\!) %B%~%b> ' 
+set rprompt=' [%m]'
+set autolist
+# History has maxiumum 2048 entries
+set history=2048
+# erase duplicate history entries
+set histdup=erase
+# which file to use for the history
+set histfile=$HOME/.history
+# store maximal 2048 enties to the history file and merge new and old
+# history
+set savehist=(2048 merge)
+
+# If a command takes more than 5s give a summary at it's end
+set time=5
+
+# Care about directory history
+set savedirs
+set dirsfile=$HOME/.cshdirs
+set pushdsilent
+
+# Try to work with symlinks as if they where actually a directory
+# set symlinks=ignore
+set symlinks=expand
+
+# cd to a directory if only the name is typed (like YAOS)
+# set implicitcd
+
+# prompt before executing 'rm *'
+set rmstar
+
+# Show the users loged on
+set watch=(1 any any)
+
+set listjobs
+
+# The folders to check for new mail
+set mail=(60 $HOME/mail/INBOX $HOME/mail/NETMAIL $HOME/mail/Gudi $HOME/mail/Roottalk)
+
+# Get process statistics if the proc takes more than 5s
+set time=(5 "User: %Us   Kernel: %Ss   Total: %Es   CPU: %P")
+
+# # If the exit value is non-zero, print it. Very handy for scripting.
+# # Screws up less for whatever reason...
+# # set printexitvalue
+
+
+if ($TERM == "xterm") then
+    # Change the title of an XTERM to current working dir:
+    alias cwdcmd 'echo -n "]2;${HOST}: $cwd]1;${HOST}"'
+else 
+    set autologout=(60 10)
+endif
+
+
+# Some systems set a lot of completion commands. Not wanted here...
+
+uncomplete *
+
+# Complete: allow only certain expansions for commands
+complete mailf          'p@*@T:/users/arwagner/mail/@'
+complete cd             p/1/d/          # Directories only
+complete chdir          p/1/d/
+complete pushd          p/1/d/
+complete popd           p/1/d/
+complete xdvi           'n/*/f:*.dvi/'  # Only files that match *.dvi
+complete tex            'n/*/f:*.tex/'  # Only files that match *.tex
+complete latex          'n/*/f:*.{tex,ltx}/'
+complete acroread       'p/*/f:*.pdf/'
+complete cvs            'c/--/(help help-commands help-synonyms)/' \
+                        'p/1/(add admin annotate checkout commit diff \
+                        edit editors export history import init log login \
+                        logout rdiff release remove rtag status tag unedit \
+                        update watch watchers)/' 'n/-a/(edit unedit commit \
+                        all none)/' 'n/watch/(on off add remove)/'
+complete ghostview      'p/*/f:*.{ps,pdf,ps.gz}/'
+complete evince         'p/*/f:*.{ps,pdf,ps.gz}/'
+complete gv             'p/*/f:*.{ps,pdf,ps.gz,eps,eps.gz}/'
+complete ggv            'p/*/f:*.{ps,pdf,ps.gz,eps,eps.gz}/'
+complete man            'n@[123456789n]@`\ls -1fUA ${_manpath}$:-1/|&\sed \\%.\*:%d\;s%\\.$:-1.\*\$%%|\sort -u`@'\
+                        'c/-/(- f k P s t)/' 'n/-f/c/' 'n/-k/x:<keyword>/'\
+                        'n/-P/d/' 'N@-P@`\ls -1 $:-1/man? | sed s%\\..\*\$%%`@'\
+                        'n/*/c/'
+
+# Platform dependent stuff
+#
+source $HOME/.env.csh
+source $HOME/.path.csh
+source $HOME/.aliases.csh
+
