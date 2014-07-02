@@ -2,21 +2,20 @@
 #
 # Environment variables for sh-like shells 
 #
-#
-# Last update: Wed, 2004/03/10, 15:31:16
-#
 
 # zsh doesn't set HOSTNAME but only HOST
-
 # export HOSTNAME=`hostname`.`dnsdomainname`
 
 # remove coredumps automatically by setting theire maximum size to 0
 ulimit -c 0
+
 # set higher stack limit for unison etc.
 # breaks recent versions of xine
 ### ulimit -s 65536
 
-export LANG='C'
+## Use C as default language, but nowadays UTF should be good enough
+## export LANG='C'
+
 export USERNAME=''
 export TEMP=$HOME/tmp
 export TMP=$HOME/tmp

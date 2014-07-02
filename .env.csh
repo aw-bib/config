@@ -2,9 +2,10 @@
 #
 # Environment vor csh-like shells
 #
-# Last update: Wed, 2004/03/10, 15:31:16
-#
-setenv LANG     "C"
+
+## Use C as default language, but nowadays UTF should be good enough
+## setenv LANG     "C"
+
 setenv USERNAME $USER
 setenv TEMP     "$HOME/tmp"
 setenv TMP      "$HOME/tmp"
