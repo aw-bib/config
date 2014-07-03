@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# Last change: <Wed, 2005/11/30 11:19:07 arwagner wptx44>
+# Last change: <Thu, 2014/07/03 13:49:13 arwagner bib-pubdb1>
 #
 
 if [ $USERNAME = "arwagner" ]; then
@@ -97,7 +97,7 @@ setopt SHARE_HISTORY
 setopt SH_FILE_EXPANSION
 
 autoload -U compinit
-compinit
+
 # Completion so "cd ..<TAB>" -> "cd ../"
 zstyle ':completion:*' special-dirs ..
 zstyle ':completion:*' verbose yes
