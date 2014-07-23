@@ -15,6 +15,7 @@ ulimit -c 0
 
 ## Use C as default language, but nowadays UTF should be good enough
 ## export LANG='C'
+export LANG="en_US.utf-8"
 
 export USERNAME=''
 export TEMP=$HOME/tmp
@@ -89,4 +90,8 @@ export PERL5LIB="$HOME/lib/perl/site_perl"
 ## Environment for Lahey Fortran Compiler
 ##
 #source /usr/local/OHL/lf9561/bash_setup
+
+if [ -e $HOME/.env.sh.local ]; then 
+	source $HOME/.env.sh.local
+fi
 

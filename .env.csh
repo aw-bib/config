@@ -5,6 +5,7 @@
 
 ## Use C as default language, but nowadays UTF should be good enough
 ## setenv LANG     "C"
+setenv LANG     "en_US.utf-8"
 
 setenv USERNAME $USER
 setenv TEMP     "$HOME/tmp"
