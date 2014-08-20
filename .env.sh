@@ -15,7 +15,9 @@ ulimit -c 0
 
 ## Use C as default language, but nowadays UTF should be good enough
 ## export LANG='C'
-export LANG="en_US.utf-8"
+# Try to set utf locale. Note that depending on the unix it might be
+# utf8 or UTF-8 or ...
+export LANG=`locale -a | grep -i "en_US.utf"`
 
 export USERNAME=''
 export TEMP=$HOME/tmp

@@ -5,7 +5,9 @@
 
 ## Use C as default language, but nowadays UTF should be good enough
 ## setenv LANG     "C"
-setenv LANG     "en_US.utf-8"
+# Try to set utf locale. Note that depending on the unix it might be
+# utf8 or UTF-8 or ...
+setenv LANG `locale -a | grep -i "en_US.utf"`
 
 setenv USERNAME $USER
 setenv TEMP     "$HOME/tmp"
