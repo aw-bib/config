@@ -7,3 +7,5 @@
 [alias]
 	d = difftool
 	co = checkout
+[http]
+	sslVerify = false
