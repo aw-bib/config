@@ -77,7 +77,9 @@ PATH=$PATH:/usr/local/HEP/bin
 if [ -d /usr/local/alternatives/TeX-Live/bin ]; then
 	PATH=$PATH:/usr/local/alternatives/TeX-Live/bin
 fi
-PATH=$PATH:/usr/local/bin
+if [ -d /usr/local/texlive/2014/bin/x86_64-linux ]; then
+	PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-linux
+fi
 
 # Replace systems Wine installation by a self compiled edition
 if [ -h /opt/wine ] || [ -d /opt/wine ]; then
@@ -86,14 +88,16 @@ if [ -h /opt/wine ] || [ -d /opt/wine ]; then
 	LD_RUN_PATH=$LD_RUN_PATH:/opt/wine/lib:/opt/wine/lib/wine
 fi
 
-if [ -d /opt/chess/lib ]; then
+if [ -d /opt/chess ]; then
 	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/chess/lib
 	LD_RUN_PATH=$LD_RUN_PATH:/opt/chess/lib
+	PATH=$PATH:/opt/chess/bin
 fi
 
-if [ -d /opt/photo/lib ]; then
+if [ -d /opt/photo ]; then
 	LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/photo/lib
 	LD_RUN_PATH=$LD_RUN_PATH:/opt/photo/lib
+	PATH=$PATH:/opt/photo/bin
 fi
 
 PATH=$PATH:/bin
@@ -101,9 +105,7 @@ PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/X11R6/bin
 PATH=$PATH:/usr/bin/X11
 PATH=$PATH:/usr/games
-PATH=$PATH:/usr/local/OHL/bin
 PATH=$PATH:/opt/bin
-PATH=$PATH:/opt/chess/bin
 PATH=$PATH:/opt/Go/bin
 
 if [ -f /etc/PATH ]; then
@@ -112,7 +114,6 @@ fi
 
 
 # MuPAD needs this, it will not run otherwise!!!
-#
 MuPAD_ROOT_PATH="/usr/local/mupad25"
 PATH=$MuPAD_ROOT_PATH/share/bin:$PATH
 

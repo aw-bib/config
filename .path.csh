@@ -52,22 +52,28 @@ setenv PATH "${PATH}:${HOME}/bin/ROX"
 if ( -d /usr/local/alternatives/TeX-Live/bin ) then
 	PATH=$PATH:/usr/local/alternatives/TeX-Live/bin
 fi
+if ( -d /usr/local/texlive/2014/bin/x86_64-linux ) then
+	PATH=$PATH:/usr/local/texlive/2014/bin/x86_64-linux
+fi
+
 setenv PATH "${PATH}:/usr/local/bin"
 
 if ( -d /opt/wine ) then
-	setenv PATH /opt/wine/bin:${PATH}
 	setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/opt/wine/lib
 	setenv LD_RUN_PATH     ${LD_RUN_PATH}:/opt/wine/lib
+	setenv PATH /opt/wine/bin:${PATH}
 endif
 
-if ( -d /opt/chess/lib ) then
+if ( -d /opt/chess ) then
 	setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/opt/chess/lib
 	setenv LD_RUN_PATH     ${LD_RUN_PATH}:/opt/chess/lib
+	setenv PATH "${PATH}:/opt/chess/bin"
 fi
 
-if ( -d /opt/photo/lib ) then
+if ( -d /opt/photo ) then
 	setenv LD_LIBRARY_PATH ${LD_LIBRARY_PATH}:/opt/photo/lib
 	setenv LD_RUN_PATH     ${LD_RUN_PATH}:/opt/photo/lib
+	setenv PATH "${PATH}:/opt/photo/bin"
 fi
 
 setenv PATH "${PATH}:/bin"
@@ -75,10 +81,7 @@ setenv PATH "${PATH}:/usr/bin"
 setenv PATH "${PATH}:/usr/X11R6/bin"
 setenv PATH "${PATH}:/usr/bin/X11"
 setenv PATH "${PATH}:/usr/games"
-setenv PATH "${PATH}:/usr/local/HEP/bin"
-setenv PATH "${PATH}:/usr/local/OHL/bin"
 setenv PATH "${PATH}:/opt/bin"
-setenv PATH "${PATH}:/opt/chess/bin"
 
 # If /etc/PATH exists append it to the current search path
 if ( -e /etc/PATH ) then
