@@ -124,6 +124,10 @@ alias cpu="ps aux | awk 'NR == 1 || \$3 > 0'"
 
 alias nav="exo-open "
 
+# programming
+alias perllint="perl -Mstrict -Mdiagnostics -cw "
+
+
 # Change directories
 alias pd..='pd ..'
 
