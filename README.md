@@ -26,16 +26,23 @@ colour mode.
 ## Themes
 
 A default theme mainly adopted for an xfce4 environment called
-aw-gnome is contained in the .themes/ folder. This theme is based on
-(http://lassekongo83.deviantart.com/art/Zukitwo-203936861) but adopts
-some window buttons from other themes and also uses a Solarized based
-background / text colour.
+aw-gnome is contained in the .themes/ folder. This theme is heavily
+based on (http://lassekongo83.deviantart.com/art/Zukitwo-203936861)
+but adopts some window buttons from other themes and also uses a
+Solarized based background / text colour.
 
 ## Icons
 
 This contains only a stub of replacement icons and an X11-mouse
 cursor theme. There is also a simple script to setup links to reuse
 the base osx theme.
+
+## Screenshot
+
+The desktop shows iceweasel, Thunar, gvim, xfce-terminal, conky and
+the various configured panels.
+
+![Sample desktop](desktop.png)
 
 ## Config
 
