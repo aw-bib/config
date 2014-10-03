@@ -8,12 +8,17 @@
         <property name="color1" type="empty"/>
         <property name="color2" type="empty"/>
         <property name="color-style" type="empty"/>
-        <property name="image-path" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXT.png"/>
+        <property name="image-path" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
         <property name="image-show" type="empty"/>
-        <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXT.png"/>
-        <property name="last-single-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXT.png"/>
+        <property name="last-image" type="string" value="/usr/share/xfce4/backdrops/xfce-transparent.png"/>
+        <property name="last-single-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
         <property name="last-image-list" type="string" value="/home/arwagner/.config/xfce4/desktop/backdrop.list"/>
         <property name="image-style" type="int" value="2"/>
+      </property>
+      <property name="monitor1" type="empty">
+        <property name="image-path" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
       </property>
     </property>
   </property>

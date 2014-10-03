@@ -9,7 +9,7 @@
     <property name="height" type="int" value="420"/>
   </property>
   <property name="folders" type="empty">
-    <property name="last-used-media" type="string" value="/home/arwagner"/>
+    <property name="last-used-media" type="string" value="/scratch/arwagner/Mediathek/Spielfilm"/>
   </property>
   <property name="playlist" type="empty">
     <property name="show-playlist" type="bool" value="false"/>
@@ -18,6 +18,6 @@
     <property name="plugins" type="string" value="/usr/lib/x86_64-linux-gnu/parole-0/parole-notify.so;/usr/lib/x86_64-linux-gnu/parole-0/tray-icon.so"/>
   </property>
   <property name="audio" type="empty">
-    <property name="volume" type="int" value="0"/>
+    <property name="volume" type="int" value="25"/>
   </property>
 </channel>
