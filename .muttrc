@@ -1,0 +1,22 @@
+set autoedit=yes
+set beep=no
+set beep_new=yes
+set collapse_unread=yes
+set duplicate_threads=yes
+set edit_headers=yes
+set sort=threads
+set hidden_host=yes
+set mail_check=5
+set use_from=yes
+set envelope_from=yes
+
+auto_view text/x-vcard
+auto_view text/calendar
+auto_view text/html
+
+# Prefer text above all others...
+alternative_order text/plain text text/html
+
+source .muttrc.local
+
+# vim:tw=0:nowrap
