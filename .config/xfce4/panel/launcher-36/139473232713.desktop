@@ -9,3 +9,6 @@ Comment=Mapivi Photo Database
 NoDisplay=false
 Name[en_US]=mapivi
 X-XFCE-Source=file:///home/arwagner/.local/share/applications/mapivi.desktop
+Path=
+Terminal=false
+StartupNotify=false

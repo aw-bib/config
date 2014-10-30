@@ -3,7 +3,7 @@
 <channel name="xfce4-mixer" version="1.0">
   <property name="active-card" type="string" value="HDAIntelMIDAlsamixer"/>
   <property name="volume-step-size" type="uint" value="5"/>
-  <property name="sound-card" type="string" value="CaptureMonitorofBuiltinAudioAnalogStereoPulseAudioMixer"/>
+  <property name="sound-card" type="string" value="CaptureBuiltinAudioAnalogStereoPulseAudioMixer"/>
   <property name="sound-cards" type="empty">
     <property name="HDAIntelMIDAlsamixer" type="array">
       <value type="string" value="Master"/>
