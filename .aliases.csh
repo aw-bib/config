@@ -115,9 +115,10 @@ alias nav  "exo-open "
 
 # Some terminal aliases. It comes in handy to have some terms with
 # different colours. Names are just conventions from a project.
-alias gitterm 'xterm -bg lightgreen -fg black'
-alias cdsterm 'xterm -bg yellow -fg black'
-alias pyterm  'xterm -bg black -fg white -e ipython'
+alias gitterm   'xterm -bg lightgreen -fg black'
+alias cdsterm   'xterm -bg yellow -fg black'
+alias pyterm    'xterm -bg black -fg white -e ipython'
+alias perlterm  'xterm -bg black -fg white -e perl -d -e 1'
 
 if ( -e $HOME/.aliases.csh.local ) then 
 	source $HOME/.aliases.csh.local

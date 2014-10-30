@@ -1,11 +1,28 @@
 [include]
 	path = ~/.gitconfig.local
 [diff]
+	# allow to use vimdiff as difftool
 	tool = vimdiff
 [difftool]
 	prompt = false
 [alias]
+	# set git d to use difftool, ie. vimdiff
 	d = difftool
+	# shortcut for checkout
 	co = checkout
 [http]
 	sslVerify = false
+[color]
+	# Allow to add colours
+	ui = auto
+[color "branch"]
+	# Highlight the currently checked out branch
+	current = yellow reverse
+	local = yellow
+	remote = green
+[color "status"]
+	added = yellow
+	changed = red
+	untracked = green
+	# Highlight the currently checked out branch
+	branch = yellow reverse

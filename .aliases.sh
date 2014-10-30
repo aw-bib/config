@@ -136,6 +136,7 @@ alias pd..='pd ..'
 alias gitterm='xterm -bg lightgreen -fg black'
 alias cdsterm='xterm -bg yellow -fg black'
 alias pyterm='xterm -bg black -fg white -e ipython'
+alias perlterm='xterm -bg black -fg white -e perl -d -e 1'
 
 if [ -e $HOME/.aliases.sh.local ]; then 
 	source $HOME/.aliases.sh.local
