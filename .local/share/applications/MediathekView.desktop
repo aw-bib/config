@@ -4,9 +4,9 @@
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=/home/arwagner/bin/java/MediathekViewer/MediathekView.sh
+Exec=bash -c "$HOME/bin/java/MediathekViewer/MediathekView.sh"
 Icon=/home/arwagner/bin/java/MediathekViewer/info/MediathekView.svg
-Name=MediathekViewer 4
+Name=MediathekViewer 9
 Comment=Download arte/ZDF/ARD... Mediathek
 NoDisplay=false
-Name[en_US]=MediathekViewer 4
+Name[en_US]=MediathekViewer 9
