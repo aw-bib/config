@@ -10,10 +10,10 @@
 setenv LANG `locale -a | grep -i "en_US.utf"`
 
 setenv USERNAME $USER
-setenv TEMP     "$HOME/tmp"
-setenv TMP      "$HOME/tmp"
-setenv temp     "$HOME/tmp"
-setenv tmp      "$HOME/tmp"
+### setenv TEMP     "$HOME/tmp"
+### setenv TMP      "$HOME/tmp"
+### setenv temp     "$HOME/tmp"
+### setenv tmp      "$HOME/tmp"
 setenv PAGER    "less"
 setenv TIME     "User: %Us   Kernel: %Ss   Total: %Es   CPU: %P"
 setenv LESSOPEN "|${HOME}/bin/generic/lesspipe %s"
