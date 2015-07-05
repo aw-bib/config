@@ -1,5 +1,5 @@
 [Configuration]
-ColorForeground=#657b83
+ColorForeground=#65657b7b8383
 ColorPalette1=#070736364242
 ColorPalette2=#dcdc32322f2f
 ColorPalette3=#858599990000
@@ -41,4 +41,5 @@ ColorBold=#586e75
 ColorBoldUseDefault=FALSE
 ColorPalette=#eee8d5;#dc322f;#859900;#b58900;#268bd2;#d33682;#2aa198;#073642;#fdf6e3;#cb4b16;#93a1a1;#839496;#657b83;#6c71c4;#586e75;#002b36
 TabActivityColor=#dc322f
+TitleMode=TERMINAL_TITLE_REPLACE
 
