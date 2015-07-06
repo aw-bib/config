@@ -15,7 +15,9 @@
 
 
 # Set the LANG-variable to a sensitive value. RedHat/gdm has a bug here...
-setenv LANG C # en_US.ISO-8859-1
+# setenv LANG C # en_US.ISO-8859-1
+# setenv LANG en_GB.utf-8 # en_US.ISO-8859-1
+export LANG=`locale -a | grep -i "en_GB.utf"`
 ## setenv LANG de_DE
 ## setenv LC_CTYPE de_DE
 
