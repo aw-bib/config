@@ -76,6 +76,7 @@ if ( -d /opt/photo ) then
 	setenv PATH "${PATH}:/opt/photo/bin"
 fi
 
+setenv PATH "${PATH}:/usr/local/bin"
 setenv PATH "${PATH}:/bin"
 setenv PATH "${PATH}:/usr/bin"
 setenv PATH "${PATH}:/usr/X11R6/bin"
