@@ -26,7 +26,6 @@ export USERNAME=''
 ## export temp=$HOME/tmp
 ## export tmp=$HOME/tmp
 
->>>>>>> 9bff4fc77a67cbc68b6f0699609d6b4e0c40e19b
 export PAGER=less
 export TIME="User: %Us   Kernel: %Ss   Total: %Es   CPU: %P"
 export LESSOPEN="|$HOME/bin/generic/lesspipe %s"
