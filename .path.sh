@@ -46,11 +46,6 @@ case "$HOSTTYPE" in
 		if [ -e /etc/SuSE-release ]; then
 			PATH=$HOME/bin/i386/SuSE:$PATH
 		fi
-#		if [ -e /scratch/arwagner/chess ]; then
-#			PATH=$PATH:/scratch/arwagner/chess/bin
-#		fi
-		# Instead of Xaw3d or Athena use neXtaw
-		## export LD_PRELOAD=$HOME/lib/i386/libneXtaw.so.0
 	;;
 	*hp*)
 		# HP-UX on a PaRISC-Workstation
@@ -70,8 +65,6 @@ esac
 
 PATH=$PATH:$HOME/bin
 PATH=$PATH:$HOME/bin/generic
-PATH=$PATH:$HOME/bin/ROX
-PATH=$PATH:/usr/local/HEP/bin
 
 # Check wether TeX-Live lives in /usr/local/alternatives
 if [ -d /usr/local/alternatives/TeX-Live/bin ]; then
@@ -100,6 +93,7 @@ if [ -d /opt/photo ]; then
 	PATH=$PATH:/opt/photo/bin
 fi
 
+PATH=$PATH:/usr/local/bin
 PATH=$PATH:/bin
 PATH=$PATH:/usr/bin
 PATH=$PATH:/usr/X11R6/bin
@@ -111,11 +105,6 @@ PATH=$PATH:/opt/Go/bin
 if [ -f /etc/PATH ]; then
 	PATH=$PATH:`cat /etc/PATH`
 fi 
-
-
-# MuPAD needs this, it will not run otherwise!!!
-MuPAD_ROOT_PATH="/usr/local/mupad25"
-PATH=$MuPAD_ROOT_PATH/share/bin:$PATH
 
 export PATH 
 export LD_RUN_PATH
