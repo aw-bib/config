@@ -3,6 +3,7 @@
 [diff]
 	# allow to use vimdiff as difftool
 	tool = vimdiff
+	guitool = gvimdiff
 [difftool]
 	prompt = false
 [alias]
@@ -12,9 +13,9 @@
 	co = checkout
 [http]
 	sslVerify = false
-[color]
-	# Allow to add colours
-	ui = auto
+## [color]
+## 	# Allow to add colours
+## 	ui = auto
 [color "branch"]
 	# Highlight the currently checked out branch
 	current = yellow reverse
