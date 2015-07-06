@@ -1,3 +1,4 @@
+
 [Default Applications]
 x-scheme-handler/mailto=icedove.desktop
 audio/x-mp3=totem.desktop
@@ -138,6 +139,7 @@ x-content/video-svcd=parole.desktop
 x-content/video-vcd=parole.desktop
 text/x-google-video-pointer=parole.desktop
 video/x-theora+ogg=parole.desktop
+application/x-genesis-rom=exo-web-browser.desktop
 
 [Added Associations]
 x-scheme-handler/mailto=exo-mail-reader.desktop
@@ -228,8 +230,8 @@ text/x-python=gvim.destkop;gvim.desktop;
 text/x-sql=gvim.desktop
 text/x-tex=gvim.desktop;
 text/xml=gvim.desktop;iceweasel.desktop;
-x-scheme-handler/http=exo-web-browser.desktop;userapp-Iceweasel-ICVHHX.desktop;
-x-scheme-handler/https=exo-web-browser.desktop;userapp-Iceweasel-ICVHHX.desktop;
+x-scheme-handler/http=exo-web-browser.desktop
+x-scheme-handler/https=exo-web-browser.desktop
 x-scheme-handler/ftp=userapp-Iceweasel-88ZB7W.desktop;userapp-Iceweasel-ICVHHX.desktop;
 x-scheme-handler/chrome=userapp-Iceweasel-88ZB7W.desktop;userapp-Iceweasel-ICVHHX.desktop;
 text/html=userapp-Iceweasel-88ZB7W.desktop;iceweasel.desktop;userapp-Iceweasel-ICVHHX.desktop;
@@ -279,6 +281,9 @@ x-content/video-svcd=parole.desktop;
 x-content/video-vcd=parole.desktop;
 text/x-google-video-pointer=parole.desktop;
 video/x-theora+ogg=parole.desktop;
+x-scheme-handler/file=exo-file-manager.desktop
+x-scheme-handler/trash=exo-file-manager.desktop
+application/x-genesis-rom=exo-web-browser.desktop;
 
 [Removed Associations]
 text/x-tex=gedit.desktop;
