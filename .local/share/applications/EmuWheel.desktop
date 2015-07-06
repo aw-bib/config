@@ -1,12 +1,12 @@
 #!/usr/bin/env xdg-open
-
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=/home/arwagner/bin/generic/EmuWheel
+Exec=bash -c "$HOME/bin/generic/EmuWheel"
 Icon=gnome-settings-mouse
 Name=Emulate Wheel
 Comment=Use middle buttons + Trackpoint for mouse wheel
 NoDisplay=false
+Hidden=false
 Name[en_US]=Emulate Wheel

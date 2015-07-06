@@ -1,3 +1,4 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 X-AppInstall-Package=gkrellm
 X-AppInstall-Popcon=1106
@@ -10,5 +11,5 @@ Terminal=false
 Type=Application
 Categories=System;
 X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
-Hidden=true
+Hidden=false
 

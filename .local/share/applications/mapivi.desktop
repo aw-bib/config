@@ -1,12 +1,12 @@
 #!/usr/bin/env xdg-open
-
 [Desktop Entry]
 Encoding=UTF-8
 Version=1.0
 Type=Application
-Exec=/home/arwagner/GNUstep/Choices/Apps/Office/mapivi/AppRun %f
+Exec=bash -c "$HOME/GNUstep/Choices/Apps/Office/mapivi/AppRun %f"
 Icon=/home/arwagner/GNUstep/Choices/Apps/Office/mapivi/AppIcon.xpm
 Name=mapivi
 Comment=Mapivi Photo Database
 NoDisplay=false
+Hidden=false
 Name[en_US]=mapivi

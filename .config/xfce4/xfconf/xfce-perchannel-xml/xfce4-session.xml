@@ -8,7 +8,7 @@
         <property name="Font" type="empty"/>
         <property name="BgColor" type="empty"/>
         <property name="FgColor" type="empty"/>
-        <property name="Image" type="string" value="/usr/share/images/desktop-base/gnome-splash-curves.png"/>
+        <property name="Image" type="string" value=""/>
       </property>
     </property>
   </property>
