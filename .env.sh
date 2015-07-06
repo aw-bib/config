@@ -17,13 +17,13 @@ ulimit -c 0
 ## export LANG='C'
 # Try to set utf locale. Note that depending on the unix it might be
 # utf8 or UTF-8 or ...
-export LANG=`locale -a | grep -i "en_US.utf"`
+export LANG=`locale -a | grep -i "en_GB.utf"`
 
 export USERNAME=''
-export TEMP=$HOME/tmp
-export TMP=$HOME/tmp
-export temp=$HOME/tmp
-export tmp=$HOME/tmp
+## export TEMP=$HOME/tmp
+## export TMP=$HOME/tmp
+## export temp=$HOME/tmp
+## export tmp=$HOME/tmp
 export PAGER=less
 export TIME="User: %Us   Kernel: %Ss   Total: %Es   CPU: %P"
 export LESSOPEN="|$HOME/bin/generic/lesspipe %s"

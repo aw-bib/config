@@ -7,13 +7,13 @@
 ## setenv LANG     "C"
 # Try to set utf locale. Note that depending on the unix it might be
 # utf8 or UTF-8 or ...
-setenv LANG `locale -a | grep -i "en_US.utf"`
+setenv LANG `locale -a | grep -i "en_GB.utf"`
 
 setenv USERNAME $USER
-setenv TEMP     "$HOME/tmp"
-setenv TMP      "$HOME/tmp"
-setenv temp     "$HOME/tmp"
-setenv tmp      "$HOME/tmp"
+## setenv TEMP     "$HOME/tmp"
+## setenv TMP      "$HOME/tmp"
+## setenv temp     "$HOME/tmp"
+## setenv tmp      "$HOME/tmp"
 setenv PAGER    "less"
 setenv TIME     "User: %Us   Kernel: %Ss   Total: %Es   CPU: %P"
 setenv LESSOPEN "|${HOME}/bin/generic/lesspipe %s"
