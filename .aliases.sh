@@ -127,6 +127,7 @@ alias nav="exo-open "
 # programming
 alias perllint="perl -Mstrict -Mdiagnostics -cw "
 
+alias mod="git status | grep modified | awk '{print \$2}'"
 
 # Change directories
 alias pd..='pd ..'
