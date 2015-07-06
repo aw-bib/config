@@ -12,6 +12,6 @@
 #	exec $1
 # below
 
-[[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
+[[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
 exec startxfce4
 
