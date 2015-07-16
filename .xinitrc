@@ -11,7 +11,7 @@
 # To reenable F1 session settings use
 #	exec $1
 # below
-
+limit coredumpsize 0
 [[ -f $HOME/.Xresources ]] && xrdb -merge $HOME/.Xresources
 exec startxfce4
 
