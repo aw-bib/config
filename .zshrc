@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# Last change: <Thu, 2014/07/03 13:49:13 arwagner bib-pubdb1>
+# Last change: <Thu, 2015/07/16 09:04:28 arwagner l00slwagner>
 #
 
 if [ $USERNAME = "arwagner" ]; then
@@ -32,6 +32,27 @@ fi
 # Set prompts
 PROMPT='(%h) %B%~%b> '   # default prompt
 RPROMPT='[%m]'           # prompt for right side of screen
+
+# Enable git/svn/cvs branch info
+setopt prompt_subst
+autoload -Uz vcs_info
+zstyle ':vcs_info:*' actionformats \
+    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
+zstyle ':vcs_info:*' formats       \
+    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
+zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
+
+zstyle ':vcs_info:*' enable git cvs svn
+
+# or use pre_cmd, see man zshcontrib
+vcs_info_wrapper() {
+  vcs_info
+  if [ -n "$vcs_info_msg_0_" ]; then
+    echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  fi
+}
+RPROMPT=$'$(vcs_info_wrapper)'
+
 
 # setup backspace correctly
 stty erase `tput kbs`
