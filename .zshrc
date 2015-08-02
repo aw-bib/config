@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# Last change: <Thu, 2015/07/16 09:04:28 arwagner l00slwagner>
+# Last change: <Thu, 2015/07/16 16:35:23 arwagner l00slwagner>
 #
 
 if [ $USERNAME = "arwagner" ]; then
@@ -37,9 +37,9 @@ RPROMPT='[%m]'           # prompt for right side of screen
 setopt prompt_subst
 autoload -Uz vcs_info
 zstyle ':vcs_info:*' actionformats \
-    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f '
+    '%F{5}[%F{2}%b%F{3}|%F{1}%a%F{5}]%f'
 zstyle ':vcs_info:*' formats       \
-    '%F{5}(%f%s%F{5})%F{3}-%F{5}[%F{2}%b%F{5}]%f '
+    '%F{5}[%F{2}%b%F{5}]%f'
 zstyle ':vcs_info:(sv[nk]|bzr):*' branchformat '%b%F{1}:%F{3}%r'
 
 zstyle ':vcs_info:*' enable git cvs svn
@@ -49,6 +49,8 @@ vcs_info_wrapper() {
   vcs_info
   if [ -n "$vcs_info_msg_0_" ]; then
     echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
+  else
+    echo "[%m]"
   fi
 }
 RPROMPT=$'$(vcs_info_wrapper)'
