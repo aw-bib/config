@@ -117,8 +117,9 @@ alias nav  "exo-open "
 # different colours. Names are just conventions from a project.
 alias gitterm   'xterm -bg lightgreen -fg black'
 alias cdsterm   'xterm -bg yellow -fg black'
-alias pyterm    'xterm -bg black -fg white -e ipython'
-alias perlterm  'xterm -bg black -fg white -e perl -d -e 1'
+
+alias pyterm    'xterm -T "iPython [`hostname`]" +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e ipython'
+alias perlterm  'xterm -T "Perl [`hostname`]"    +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e perl -d -e 1'
 
 if ( -e $HOME/.aliases.csh.local ) then 
 	source $HOME/.aliases.csh.local
