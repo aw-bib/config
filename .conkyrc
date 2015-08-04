@@ -64,7 +64,7 @@ show_graph_range no
 TEXT
 ${alignc}$nodename
 ${alignc}$sysname
-${alignc}${exec cat /etc/debian_version}
+# ${alignc}${exec cat /etc/debian_version}
 ${alignc}$kernel
 ${alignc}$machine
 $color Proc ${hr 1}
@@ -94,6 +94,8 @@ $color WLAN ${hr 1}
 # eth0:$color ${upspeed eth0} ${color grey} - Down:$color ${downspeed eth0}
 ${color grey}${upspeed wlan0} ${alignr}${downspeed wlan0}
 ${color grey}${downspeedgraph wlan0 32, 30}${alignr}${color grey}${upspeedgraph wlan0 32, 30}
+${color grey}${upspeed eth0} ${alignr}${downspeed eth0}
+${color grey}${downspeedgraph eth0 32, 30}${alignr}${color grey}${upspeedgraph eth0 32, 30}
 ${color grey}up ${alignr}down
 $color Disks ${hr 1}
 ${alignc} / ${color grey}${fs_used /}
