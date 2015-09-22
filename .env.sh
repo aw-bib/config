@@ -35,8 +35,8 @@ if [ -e `which vim` ]; then
 		export VISUAL="vim"
 		export EDITOR="vim"
 	else
-		export VISUAL="gvim"
-		export EDITOR="gvim"
+		export VISUAL="gvim -f"
+		export EDITOR="gvim -f"
 	fi
 else
 	export VISUAL="vi"
