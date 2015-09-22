@@ -22,8 +22,8 @@ if ( -e `which vim` ) then
            setenv VISUAL   "vim"
            setenv EDITOR   "vim"
    else
-           setenv VISUAL   "vim -X"
-           setenv EDITOR   "vim -X"
+           setenv VISUAL   "gvim"
+           setenv EDITOR   "gvim"
    endif
 else
         setenv VISUAL   "vi"

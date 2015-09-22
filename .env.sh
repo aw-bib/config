@@ -32,11 +32,11 @@ export LESSOPEN="|$HOME/bin/generic/lesspipe %s"
 
 if [ -e `which vim` ]; then
 	if [ ! $DISPLAY ]; then
-		export VISUAL="vim -X"
-		export EDITOR="vim -X"
-	else
 		export VISUAL="vim"
 		export EDITOR="vim"
+	else
+		export VISUAL="gvim"
+		export EDITOR="gvim"
 	fi
 else
 	export VISUAL="vi"
