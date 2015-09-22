@@ -1,3 +1,4 @@
+set gui=none
 set gui=menu
 " ,navigation,tabs
 
@@ -36,3 +37,9 @@ function toggle_bottombar(p) {
 }
 toggle_bottombar();
 EOF
+
+" Load local changes to the above to adopt to user specific local
+" needs
+if filereadable(expand("$HOME/.vimrc.local"))
+    source $HOME/.vimperatorrc.local
+endif
