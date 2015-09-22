@@ -1,16 +1,16 @@
 #!/bin/zsh
 #
-# Last change: <Thu, 2015/07/16 16:35:23 arwagner l00slwagner>
+# Last change: <Thu, 2015/08/20 10:15:38 arwagner l00slwagner>
 #
 
 if [ $USERNAME = "arwagner" ]; then
-	bindkey -v               # vi key bindings
-	# ^R like like bash in vi-mode
-	bindkey "^R"  history-incremental-search-backward
-	# some emacs mappings in vi-mode
-	bindkey "^A"  beginning-of-line
-	bindkey "^E"  end-of-line
-fi 
+    bindkey -v               # vi key bindings
+    # ^R like like bash in vi-mode
+    bindkey "^R"  history-incremental-search-backward
+    # some emacs mappings in vi-mode
+    bindkey "^A"  beginning-of-line
+    bindkey "^E"  end-of-line
+fi
 
 # also do history expansion on space
 bindkey ' ' magic-space
@@ -18,14 +18,14 @@ bindkey ' ' magic-space
 # --------------------------------------
 # Some usual bindings not set by default
 if [ $OSTYPE = 'linux-gnu' ]; then
-	# home
-	bindkey '\e[1~'   beginning-of-line
-	# end
-	bindkey '\e[4~'   end-of-line
-	# ctrl-left
-	bindkey '\eOd'    backward-word 
-	# ctrl-right
-	bindkey '\eOc'    forward-word
+    # home
+    bindkey '\e[1~'   beginning-of-line
+    # end
+    bindkey '\e[4~'   end-of-line
+    # ctrl-left
+    bindkey '\eOd'    backward-word
+    # ctrl-right
+    bindkey '\eOc'    forward-word
 fi
 # --------------------------------------
 
@@ -73,9 +73,9 @@ REPORTTIME=5
 TIMEFMT='User: %U   Kernel: %S   Total: %E CPU: %P%'
 
 case $TERM in
-	    xterm*)
-		         chpwd() {print -Pn "\e]0;[$HOST] %~\a"}
-		        ;;
+        xterm*)
+                 chpwd() {print -Pn "\e]0;[$HOST] %~\a"}
+                ;;
 esac
 
 # visible bell (like in vim)
@@ -145,42 +145,28 @@ function getrfc()
 
 # adds a directory to the PATH, without making duplicate entries
 function add_to_path()
-{ 
+{
  if [[ "$1" == "" ]]
-  then
-   echo "Usage: add_to_path directory"
-  else
-   unset SPACEPATH
-   local SPACEPATH
-  for i in `echo ${PATH:gs/:/ /}`
-   do
-      SPACEPATH=( $SPACEPATH $i )
-    done
-  typeset -U SPACEPATH
+   then
+     echo "Usage: add_to_path directory"
+   else
+     unset SPACEPATH
+     local SPACEPATH
+   for i in `echo ${PATH:gs/:/ /}`
+     do
+       SPACEPATH=( $SPACEPATH $i )
+     done
+   typeset -U SPACEPATH
  if [[ -d "$1" ]]; then; SPACEPATH=( $SPACEPATH "$1" ); fi
-	PATH="`echo $SPACEPATH`"
-	PATH=${PATH:gs/ /:/}
-	export PATH
-	rehash
+    PATH="`echo $SPACEPATH`"
+    PATH=${PATH:gs/ /:/}
+    export PATH
+    rehash
  fi
 }
 
 # Display current directory as a 'tree'.
 function tree() { find . | sed -e 's/[^\/]*\//|----/g' -e 's/---- |/    |/g' | $PAGER }
-
-### # some (useful) completions
-###  compctl -g '*.(mp3|MP3|ogg|OGG|temp|TEMP)' + -g '*(-/)' xmms 
-###  compctl -g "*.html *.htm" + -g "*(-/) .*(-/)" + -H 0 '' galeon w3m lynx links wget
-###  compctl -g '*.(pdf|PDF)' + -g '*(-/)'  arcoread
-###  compctl -g '*(-/)' + -g '.*(/)' cd chdir dirs pushd rmdir dircmp cl
-###  compctl -g '*.(jpg|JPG|jpeg|JPEG|gif|GIF|png|PNG|bmp)' + -g '*(-/)' gimp xv pornview
-###  compctl -g '*.(e|E|)(ps|PS)' + -g '*(-/)' gs ghostview nup psps pstops psmulti psnup psselect gv
-###  compctl -g '*.tex*' + -g '*(-/)' {,la,gla,ams{la,},{g,}sli}tex texi2dvi
-###  compctl -g '*.dvi' + -g '*(-/)' dvips
-###  compctl -g '/var/db/pkg/*(/:t)' pkg_delete pkg_info
-###  compctl -g '[^.]*(-/) *.(c|C|cc|c++|cxx|cpp)' + -f cc CC c++ gcc g++
-###  compctl -g '[^.]*(-/) *(*)' + -f strip ldd gdb
-
 
 source $HOME/.env.sh
 source $HOME/.path.sh
