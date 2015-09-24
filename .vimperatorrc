@@ -10,13 +10,15 @@ autocmd LocationChange mail\\.desy\\.de set gui=tabs
 " http://stackoverflow.com/questions/21053262/vimperator-autohide-statusline
 noremap <silent> <F8> :js toggle_bottombar()<CR>
 noremap : :js toggle_bottombar('on')<CR>:
+noremap ; :js toggle_bottombar('on')<CR>;
+noremap f :js toggle_bottombar('on')<CR>f
 noremap o :js toggle_bottombar('on')<CR>o
 noremap O :js toggle_bottombar('on')<CR>O
 noremap t :js toggle_bottombar('on')<CR>t
 noremap T :js toggle_bottombar('on')<CR>t
 noremap / :js toggle_bottombar('on')<CR>/
-cnoremap <CR> <CR>:js toggle_bottombar('off')<CR>
-cnoremap <Esc> <Esc>:js toggle_bottombar('off')<CR>
+"" cnoremap <CR> <CR>:js toggle_bottombar('off')<CR>
+"" cnoremap <Esc> <Esc>:js toggle_bottombar('off')<CR>
 
 :js << EOF
 function toggle_bottombar(p) {
