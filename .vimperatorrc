@@ -3,7 +3,7 @@ set gui=menu
 " ,navigation,tabs
 
 " Pass through all keys (like CTRL-Z) for DESY Mail
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|mail\.google\.com/.test(buffer.URL)
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|google\.com/.test(buffer.URL)
 autocmd LocationChange mail\\.desy\\.de set gui=tabs
 
 "javascript to (auto)hide statusbar
@@ -17,6 +17,7 @@ noremap O :js toggle_bottombar('on')<CR>O
 noremap t :js toggle_bottombar('on')<CR>t
 noremap T :js toggle_bottombar('on')<CR>t
 noremap / :js toggle_bottombar('on')<CR>/
+noremap <BS> :ba<CR>
 "" cnoremap <CR> <CR>:js toggle_bottombar('off')<CR>
 "" cnoremap <Esc> <Esc>:js toggle_bottombar('off')<CR>
 
