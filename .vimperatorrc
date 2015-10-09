@@ -1,15 +1,19 @@
 set gui=none
-set gui=menu
 set history=5000
 set smartcase
+colorscheme solarized
 
 " ,navigation,tabs
 
-" Pass through all keys (like CTRL-Z) for DESY Mail
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|google\.com/.test(buffer.URL)
-autocmd LocationChange mail\\.desy\\.de set gui=tabs
-" autohide menue for each new page, gets back with F10
+" remove menu and tabs
 autocmd LocationChange .* set toolbars=nomenu
+autocmd LocationChange .* set gui=notabs
+" unless certain sites where vimperator needs to be disabled
+" Pass through all keys (like CTRL-Z) for DESY Mail
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|\.google\..*/.test(buffer.URL)
+autocmd LocationChange mail\\.desy\\.de set gui=tabs
+autocmd LocationChange .*\\.google\\..* set gui=tabs
+" autohide menue for each new page, gets back with F10
 noremap <F10> set toolbars=menu
 
 "javascript to (auto)hide statusbar
