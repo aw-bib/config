@@ -1,10 +1,16 @@
 set gui=none
 set gui=menu
+set history=5000
+set smartcase
+
 " ,navigation,tabs
 
 " Pass through all keys (like CTRL-Z) for DESY Mail
 autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|google\.com/.test(buffer.URL)
 autocmd LocationChange mail\\.desy\\.de set gui=tabs
+" autohide menue for each new page, gets back with F10
+autocmd LocationChange .* set toolbars=nomenu
+noremap <F10> set toolbars=menu
 
 "javascript to (auto)hide statusbar
 " http://stackoverflow.com/questions/21053262/vimperator-autohide-statusline
