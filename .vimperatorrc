@@ -7,12 +7,10 @@ colorscheme solarized
 
 " remove menu and tabs
 autocmd LocationChange .* set toolbars=nomenu
-autocmd LocationChange .* set gui=notabs
+autocmd LocationChange .* set gui=tabs
 " unless certain sites where vimperator needs to be disabled
 " Pass through all keys (like CTRL-Z) for DESY Mail
 autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|\.google\..*/.test(buffer.URL)
-autocmd LocationChange mail\\.desy\\.de set gui=tabs
-autocmd LocationChange .*\\.google\\..* set gui=tabs
 " autohide menue for each new page, gets back with F10
 noremap <F10> set toolbars=menu
 
@@ -27,6 +25,7 @@ noremap O :js toggle_bottombar('on')<CR>O
 noremap t :js toggle_bottombar('on')<CR>t
 noremap T :js toggle_bottombar('on')<CR>t
 noremap / :js toggle_bottombar('on')<CR>/
+noremap <F4> :buffer! 
 noremap <BS> :ba<CR>
 "" cnoremap <CR> <CR>:js toggle_bottombar('off')<CR>
 "" cnoremap <Esc> <Esc>:js toggle_bottombar('off')<CR>
