@@ -103,6 +103,12 @@ alias :q     "exit"
 alias :q!    "exit"
 alias :e     $EDITOR
 
+alias :Gstatus "git status"
+alias :Gdiff   "git status"
+alias :Glog    "git log"
+alias :Gpull   "git pull"
+alias :Gpush   "git push"
+
 alias un     "uname -smpr"
 alias cpu    "ps aux | awk 'NR == 1 || \$3 > 0'"
 alias gi     "grep  -in "
