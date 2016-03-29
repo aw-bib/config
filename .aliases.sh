@@ -115,6 +115,11 @@ alias cls='clear'
 alias :q="exit"
 alias :q!="exit"
 alias :e="$EDITOR"
+alias :Gstatus="git status"
+alias :Gdiff="git diff"
+alias :Glog="git log"
+alias :Gpull="git pull"
+alias :Gpush="git push"
 
 # alias xrwho  'xrwho -a -l -bell -snoop root -geometry 800x1000+1024+0 &'
 alias un="uname -smr"
