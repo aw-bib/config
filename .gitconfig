@@ -11,6 +11,8 @@
 	d = difftool
 	# shortcut for checkout
 	co = checkout
+	# Force push for local branch (e.g. after local rebasing)
+	fpush = push --force origin
 [http]
 	sslVerify = false
 ## [color]
@@ -27,3 +29,5 @@
 	untracked = green
 	# Highlight the currently checked out branch
 	branch = yellow reverse
+[push]
+	default = tracking
