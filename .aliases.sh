@@ -74,7 +74,7 @@ if [ -e `which vim` ]; then
 	alias gse='gvim -S Session.vim'
 	alias di='vimdiff'
 	alias gdi='gvimdiff'
-	alias vr='gvim --remote '
+	alias vr='gvim --remote-silent '
 fi
 alias 2a4='psnup -pA4 -2 '
 alias prn='lp -o media=recycled'
