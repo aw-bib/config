@@ -31,7 +31,7 @@ export TIME="User: %Us   Kernel: %Ss   Total: %Es   CPU: %P"
 export LESSOPEN="|$HOME/bin/generic/lesspipe %s"
 
 if [ -e `which vim` ]; then
-	if [ ! $DISPLAY ]; then
+	if [ ! $DISPLAY ] || [ $TMUX ] || [ $STY ]; then
 		export VISUAL="vim"
 		export EDITOR="vim"
 	else
