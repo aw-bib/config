@@ -27,7 +27,7 @@ umask 022
 date
 mesg n
 
-source $HOME/.path
+source $HOME/.path.csh
 mkdir /tmp/$USER
 chmod 700 /tmp/$USER
 mkdir /tmp/$USER/xvpics

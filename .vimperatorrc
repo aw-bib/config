@@ -1,6 +1,12 @@
 set gui=none
 set history=5000
 set smartcase
+# open suggests from
+# - search engines and keywords
+# - bookmarks
+# - tabs
+# - local files
+set complete=sbtf
 colorscheme solarized
 
 " ,navigation,tabs
@@ -10,7 +16,7 @@ autocmd LocationChange .* set toolbars=nomenu
 autocmd LocationChange .* set gui=tabs
 " unless certain sites where vimperator needs to be disabled
 " Pass through all keys (like CTRL-Z) for DESY Mail
-autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|\.google\..*/.test(buffer.URL)
+autocmd LocationChange .* :js modes.passAllKeys = /mail\.desy\.de|\.google\..*|.*\.de\/record\/edit.*/.test(buffer.URL)
 " autohide menue for each new page, gets back with F10
 noremap <F10> set toolbars=menu
 
