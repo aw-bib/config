@@ -1,0 +1,86 @@
+<?xml encoding="UTF-8" version="1.0"?>
+<actions>
+<action>
+	<icon>utilities-terminal</icon>
+	<name>Open Terminal Here</name>
+	<unique-id>1456412221501898-3</unique-id>
+	<command>exo-open --working-directory %f --launch TerminalEmulator</command>
+	<description>Example for a custom action</description>
+	<patterns>*</patterns>
+	<startup-notify/>
+	<directories/>
+</action>
+<action>
+	<icon>vim-32</icon>
+	<name>Edit...</name>
+	<unique-id>1461676894617867-2</unique-id>
+	<command>gvim %F</command>
+	<description>Edit the selected files in gvim</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>ipython</icon>
+	<name>iPython...</name>
+	<unique-id>1447921798170977-6</unique-id>
+	<command>xterm -T &quot;iPython [`hostname`]&quot; +sb -fa Monoid -fs 11 -sl 5000 -bg black -fg white -e ipython</command>
+	<description>Open iPython in the current directory</description>
+	<patterns>*</patterns>
+	<directories/>
+	<audio-files/>
+	<image-files/>
+	<other-files/>
+	<text-files/>
+	<video-files/>
+</action>
+<action>
+	<icon>html</icon>
+	<name>Convert to mediawiki</name>
+	<unique-id>1474959717421370-6</unique-id>
+	<command>pandoc -t mediawiki %f -o %D/%n.mediawiki</command>
+	<description>Use pandoc to convert a tile to mediawikii</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>application-msword</icon>
+	<name>Convert to docx</name>
+	<unique-id>1474959722405078-7</unique-id>
+	<command>pandoc -t docx --filter pandoc-citeproc  %f -o %D/%n.docx</command>
+	<description>Convert document to Word docx</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>application-epub+zip</icon>
+	<name>Convert to ePub</name>
+	<unique-id>1500452422411660-1</unique-id>
+	<command>pandoc -t epub --filter pandoc-citeproc  %f -o %D/%n.epub</command>
+	<description>Use pandoc to convert document to epub</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>text-x-markdown</icon>
+	<name>Convert to Markdown</name>
+	<unique-id>1474959733173109-9</unique-id>
+	<command>pandoc -t  markdown_github --filter pandoc-citeproc  %f -o %D/%n.md</command>
+	<description>Use pandoc to convert a file to Markdown (github)</description>
+	<patterns>*</patterns>
+	<other-files/>
+	<text-files/>
+</action>
+<action>
+	<icon>cmake</icon>
+	<name>make</name>
+	<unique-id>1487075872093542-4</unique-id>
+	<command>xterm -T &quot;make [`hostname`]&quot; +sb -fa Monoid -fs 11 -sl 5000 -bg black -fg white -e make</command>
+	<description>Run make</description>
+	<patterns>Makefile</patterns>
+	<text-files/>
+</action>
+</actions>
