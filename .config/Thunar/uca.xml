@@ -83,4 +83,14 @@
 	<patterns>Makefile</patterns>
 	<text-files/>
 </action>
+<action>
+	<icon>gnome-documents</icon>
+	<name>Convert -&gt; CSV</name>
+	<unique-id>1521706446105977-4</unique-id>
+	<command>/usr/bin/libreoffice --headless -convert-to csv:&quot;Text - txt - csv (StarCalc)&quot;:09,,UTF8 &quot;%d/%f&quot; --outdir &quot;%d&quot;</command>
+	<description>Convert a spreadsheet to CSV using LibreOffice</description>
+	<patterns>*.ods;*.xls;*.xslx</patterns>
+	<startup-notify/>
+	<other-files/>
+</action>
 </actions>
