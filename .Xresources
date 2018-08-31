@@ -69,3 +69,9 @@
 *color14:                 S_base1
 *color15:                 S_base3
 
+! True type antialiased monospace 10pt for xterm
+XTerm*renderFont: true
+XTerm*faceName: Hack\ Nerd\ Font
+XTerm*faceSize: 10.5
+! stop output to terminal from jumping down to bottom of scroll again
+xterm*scrollTtyOutput: false
