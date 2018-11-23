@@ -1,0 +1,12 @@
+[Desktop Entry]
+X-AppInstall-Section=main
+Name=Zimbra Briefcase (DESY)
+Comment=WebDAV access to DESY Zimbra Briefcase folder
+Exec=thunar davs://mail.desy.de/dav/arwagner@mail.desy.de/Briefcase
+Icon=gnome-fs-ssh
+Terminal=false
+Type=Application
+Categories=System;
+X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
+Hidden=false
+

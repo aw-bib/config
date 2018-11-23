@@ -1,0 +1,10 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Categories=System;
+Comment=sftp access to DESY afs
+Exec=thunar sftp://arwagner@bastion.desy.de/afs/desy.de/user/a/arwagner/
+Icon=gnome-fs-server
+Name=Bastion (DESY)
+Terminal=false
+Type=Application
+X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
