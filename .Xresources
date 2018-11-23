@@ -69,3 +69,6 @@
 *color14:                 S_base1
 *color15:                 S_base3
 
+XTerm.vt100.faceName: Hack Nerd Font:size=10.5:antialias=true
+XTerm.vt100.renderFont: true
+
