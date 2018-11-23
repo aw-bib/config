@@ -4,4 +4,24 @@
   <property name="notify-location" type="uint" value="3"/>
   <property name="theme" type="string" value="Default"/>
   <property name="expire-timeout" type="int" value="5"/>
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="calibre"/>
+      <value type="string" value="Electron"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="hplip"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="owncloud"/>
+      <value type="string" value="parole-notify"/>
+      <value type="string" value="Pidgin"/>
+      <value type="string" value="Skype"/>
+      <value type="string" value="Thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="Thunderbird"/>
+      <value type="string" value="vpnui"/>
+      <value type="string" value="Xfce volume control"/>
+      <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfdesktop"/>
+    </property>
+  </property>
 </channel>
