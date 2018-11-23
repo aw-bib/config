@@ -11,20 +11,23 @@
       <property name="position-locked" type="bool" value="true"/>
       <property name="size" type="uint" value="30"/>
       <property name="plugin-ids" type="array">
-        <value type="int" value="9"/>
+        <value type="int" value="14"/>
+        <value type="int" value="13"/>
+        <value type="int" value="18"/>
+        <value type="int" value="23"/>
+        <value type="int" value="19"/>
         <value type="int" value="15"/>
         <value type="int" value="10"/>
         <value type="int" value="38"/>
-        <value type="int" value="16"/>
+        <value type="int" value="9"/>
         <value type="int" value="6"/>
-        <value type="int" value="47"/>
         <value type="int" value="12"/>
         <value type="int" value="22"/>
         <value type="int" value="7"/>
         <value type="int" value="2"/>
         <value type="int" value="8"/>
       </property>
-      <property name="background-style" type="uint" value="2"/>
+      <property name="background-style" type="uint" value="0"/>
       <property name="background-color" type="array">
         <value type="uint" value="51344"/>
         <value type="uint" value="50130"/>
@@ -37,16 +40,14 @@
       <property name="background-image" type="string" value="/home/arwagner/.themes/aw-gnome/xfwm4/toppanel.png"/>
     </property>
     <property name="panel-2" type="empty">
-      <property name="position" type="string" value="p=7;x=29;y=603"/>
+      <property name="position" type="string" value="p=5;x=25;y=293"/>
       <property name="mode" type="uint" value="1"/>
       <property name="background-alpha" type="uint" value="90"/>
       <property name="plugin-ids" type="array">
         <value type="int" value="32"/>
         <value type="int" value="17"/>
-        <value type="int" value="18"/>
-        <value type="int" value="20"/>
-        <value type="int" value="26"/>
         <value type="int" value="30"/>
+        <value type="int" value="16"/>
         <value type="int" value="4"/>
         <value type="int" value="11"/>
         <value type="int" value="31"/>
@@ -61,7 +62,6 @@
       <property name="size" type="uint" value="49"/>
       <property name="nrows" type="uint" value="1"/>
       <property name="length" type="uint" value="10"/>
-      <property name="autohide" type="bool" value="false"/>
       <property name="disable-struts" type="bool" value="false"/>
       <property name="enter-opacity" type="uint" value="100"/>
       <property name="leave-opacity" type="uint" value="0"/>
@@ -74,6 +74,7 @@
         <value type="uint" value="14906"/>
         <value type="uint" value="65535"/>
       </property>
+      <property name="autohide-behavior" type="uint" value="0"/>
     </property>
   </property>
   <property name="plugins" type="empty">
@@ -82,8 +83,8 @@
         <value type="string" value="+lock-screen"/>
         <value type="string" value="-switch-user"/>
         <value type="string" value="+separator"/>
-        <value type="string" value="+suspend"/>
-        <value type="string" value="+hibernate"/>
+        <value type="string" value="-suspend"/>
+        <value type="string" value="-hibernate"/>
         <value type="string" value="-separator"/>
         <value type="string" value="+shutdown"/>
         <value type="string" value="+restart"/>
@@ -100,32 +101,40 @@
     </property>
     <property name="plugin-6" type="string" value="systray">
       <property name="names-visible" type="array">
-        <value type="string" value="thunar"/>
-        <value type="string" value="vlc"/>
-        <value type="string" value="empathy"/>
-        <value type="string" value="networkmanager applet"/>
-        <value type="string" value="foobnix"/>
-        <value type="string" value="ario"/>
-        <value type="string" value="gigolo"/>
-        <value type="string" value="orage"/>
+        <value type="string" value="vpnui"/>
         <value type="string" value="task manager"/>
-        <value type="string" value="linphone"/>
-        <value type="string" value="vidyodesktop"/>
-        <value type="string" value="pidgin"/>
-        <value type="string" value="deadbeef"/>
-        <value type="string" value="ekiga softphone"/>
         <value type="string" value="clipman"/>
-        <value type="string" value="mldonkey"/>
-        <value type="string" value="xfce4-power-manager"/>
-        <value type="string" value="gxmms2"/>
-        <value type="string" value="exaile.py"/>
-        <value type="string" value="calibre-gui"/>
-        <value type="string" value="xmms2tray"/>
-        <value type="string" value="grip"/>
-        <value type="string" value="hp-systray"/>
         <value type="string" value="parole"/>
+        <value type="string" value="foobnix"/>
+        <value type="string" value="calibre-gui"/>
+        <value type="string" value="keepassx"/>
+        <value type="string" value="orage"/>
+        <value type="string" value="empathy"/>
+        <value type="string" value="vlc"/>
+        <value type="string" value="xfce4-power-manager"/>
         <value type="string" value="scp-dbus-service.py"/>
+        <value type="string" value="exaile.py"/>
+        <value type="string" value="thunar"/>
+        <value type="string" value="mldonkey"/>
+        <value type="string" value="owncloud"/>
+        <value type="string" value="deadbeef"/>
+        <value type="string" value="pidgin"/>
+        <value type="string" value="cloud-drive-auto-updater"/>
+        <value type="string" value="hp-systray"/>
+        <value type="string" value="grip"/>
+        <value type="string" value="linphone"/>
         <value type="string" value="gnome-mplayer"/>
+        <value type="string" value="networkmanager applet"/>
+        <value type="string" value="xmms2tray"/>
+        <value type="string" value="gxmms2"/>
+        <value type="string" value="cloud-drive-ui"/>
+        <value type="string" value="blueman-applet"/>
+        <value type="string" value="ario"/>
+        <value type="string" value="ibus panel"/>
+        <value type="string" value="vidyodesktop"/>
+        <value type="string" value="skypeforlinux"/>
+        <value type="string" value="gigolo"/>
+        <value type="string" value="ekiga softphone"/>
       </property>
       <property name="names-hidden" type="array">
         <value type="string" value="skype"/>
@@ -133,12 +142,6 @@
       <property name="show-frame" type="bool" value="false"/>
     </property>
     <property name="plugin-10" type="string" value="weather"/>
-    <property name="plugin-16" type="string" value="xkb-plugin"/>
-    <property name="plugin-9" type="string" value="applicationsmenu">
-      <property name="show-button-title" type="bool" value="false"/>
-      <property name="button-icon" type="string" value="debian-swirl"/>
-      <property name="button-title" type="string" value="Applications"/>
-    </property>
     <property name="plugin-8" type="string" value="windowmenu">
       <property name="style" type="uint" value="0"/>
       <property name="workspace-actions" type="bool" value="false"/>
@@ -155,24 +158,9 @@
       </property>
       <property name="show-label" type="bool" value="false"/>
     </property>
-    <property name="plugin-18" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="13947319654.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-20" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="13947319846.desktop"/>
-      </property>
-    </property>
     <property name="plugin-21" type="string" value="launcher">
       <property name="items" type="array">
         <value type="string" value="13947320547.desktop"/>
-      </property>
-    </property>
-    <property name="plugin-26" type="string" value="launcher">
-      <property name="items" type="array">
-        <value type="string" value="139473211712.desktop"/>
       </property>
     </property>
     <property name="plugin-30" type="string" value="separator">
@@ -237,6 +225,35 @@
       <property name="show-handle" type="bool" value="false"/>
       <property name="show-wireframes" type="bool" value="true"/>
       <property name="include-all-workspaces" type="bool" value="false"/>
+    </property>
+    <property name="plugin-14" type="string" value="whiskermenu"/>
+    <property name="plugin-9" type="string" value="pulseaudio">
+      <property name="enable-keyboard-shortcuts" type="bool" value="true"/>
+    </property>
+    <property name="plugin-13" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/arwagner"/>
+      <property name="icon-name" type="string" value="user-home"/>
+      <property name="file-pattern" type="string" value=""/>
+    </property>
+    <property name="plugin-16" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15170677681.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-19" type="string" value="launcher">
+      <property name="items" type="array">
+        <value type="string" value="15177391941.desktop"/>
+      </property>
+    </property>
+    <property name="plugin-18" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/arwagner/Documents"/>
+      <property name="icon-name" type="string" value="folder-documents"/>
+      <property name="file-pattern" type="string" value=""/>
+    </property>
+    <property name="plugin-23" type="string" value="directorymenu">
+      <property name="base-directory" type="string" value="/home/arwagner/Public"/>
+      <property name="icon-name" type="string" value="folder-publicshare"/>
+      <property name="file-pattern" type="string" value=""/>
     </property>
   </property>
 </channel>
