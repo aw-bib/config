@@ -8,4 +8,6 @@ data0=%a, %d %b, %H:%M:%S
 font0=Cantarell 11
 tooltip=%V: %A, %d %B %Y
 hib_timing=false
+lines_vertically=false
+rotation=0
 
