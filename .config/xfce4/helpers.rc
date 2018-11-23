@@ -1,4 +1,4 @@
-WebBrowser=iceweasel
-MailReader=icedove
-TerminalEmulator=xfce4-terminal
+WebBrowser=firefox
+MailReader=thunderbird
+TerminalEmulator=xterm
 
