@@ -14,11 +14,356 @@
         <property name="last-single-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
         <property name="last-image-list" type="string" value="/home/arwagner/.config/xfce4/desktop/backdrop.list"/>
         <property name="image-style" type="int" value="2"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace5" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace6" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace7" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace8" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
+        <property name="workspace9" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="2"/>
+          <property name="last-image" type="string" value="/home/arwagner/.local/share/backgrounds/xfce/debNeXt1920.png"/>
+        </property>
       </property>
       <property name="monitor1" type="empty">
+        <property name="brightness" type="empty"/>
+        <property name="color1" type="empty"/>
+        <property name="color2" type="empty"/>
+        <property name="color-style" type="empty"/>
         <property name="image-path" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="image-show" type="empty"/>
         <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
         <property name="last-single-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        <property name="workspace0" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace1" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace2" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace3" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace4" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace5" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace6" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace7" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace8" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
+        <property name="workspace9" type="empty">
+          <property name="color-style" type="int" value="1"/>
+          <property name="color1" type="array">
+            <value type="uint" value="7936"/>
+            <value type="uint" value="16128"/>
+            <value type="uint" value="28416"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="color2" type="array">
+            <value type="uint" value="26880"/>
+            <value type="uint" value="34048"/>
+            <value type="uint" value="46848"/>
+            <value type="uint" value="65535"/>
+          </property>
+          <property name="image-style" type="int" value="5"/>
+          <property name="last-image" type="string" value="/usr/share/backgrounds/xfce/xfce-blue.jpg"/>
+        </property>
       </property>
     </property>
   </property>
@@ -28,6 +373,7 @@
       <property name="show-filesystem" type="bool" value="false"/>
       <property name="show-removable" type="bool" value="true"/>
       <property name="show-trash" type="bool" value="false"/>
+      <property name="show-network-removable" type="bool" value="false"/>
     </property>
     <property name="use-custom-font-size" type="bool" value="false"/>
     <property name="font-size" type="double" value="11.000000"/>
@@ -36,5 +382,9 @@
   <property name="windowlist-menu" type="empty">
     <property name="show-submenus" type="bool" value="false"/>
     <property name="show-sticky-once" type="bool" value="true"/>
+  </property>
+  <property name="last" type="empty">
+    <property name="window-width" type="int" value="663"/>
+    <property name="window-height" type="int" value="800"/>
   </property>
 </channel>
