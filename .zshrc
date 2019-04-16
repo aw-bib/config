@@ -1,6 +1,6 @@
 #!/bin/zsh
 #
-# Last change: <Thu, 2015/08/20 10:15:38 arwagner l00slwagner>
+# Last change: <Thu, 2019/02/07 12:53:46 arwagner l00lnxwagner.desy.de>
 #
 
 if [ $USERNAME = "arwagner" ]; then
@@ -29,7 +29,7 @@ if [ $OSTYPE = 'linux-gnu' ]; then
 fi
 # --------------------------------------
 
-# Set prompts
+# this is overwritten
 PROMPT='(%h) %B%~%b> '   # default prompt
 RPROMPT='[%m]'           # prompt for right side of screen
 
@@ -50,17 +50,20 @@ vcs_info_wrapper() {
   if [ -n "$vcs_info_msg_0_" ]; then
     echo "%{$fg[grey]%}${vcs_info_msg_0_}%{$reset_color%}$del"
   else
-    echo "[%m]"
+    echo ""
   fi
 }
-RPROMPT=$'$(vcs_info_wrapper)'
+
+# Set prompts and include vcs infos
+PROMPT=$'$(vcs_info_wrapper)(%h) %B%~%b> '
+RPROMPT='[%m]'
 
 
 # setup backspace correctly
 stty erase `tput kbs`
 
-HISTSIZE=2048
-SAVEHIST=2048
+HISTSIZE=4096
+SAVEHIST=4096
 HISTFILE=~/.zshhistory
 
 watch=(notme)
