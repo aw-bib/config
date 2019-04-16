@@ -81,8 +81,9 @@ if [ -n $ZSH_VERSION ]; then
 	export HOSTTYPE=`uname -m`
 fi
 
-# PERL additional libraries
-export PERL5LIB="$HOME/lib/perl/site_perl"
+# PERL additional libraries; include `.` for new versions of perl to
+# use libs from current dir.
+export PERL5LIB=.:"$HOME/lib/perl/site_perl"
 
 ##
 ## Environment for Intel Compilers
