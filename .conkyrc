@@ -92,10 +92,10 @@ $color $swapperc% ${color grey}$color${swapbar 4}
 ${color grey}${alignc}$swap/$swapmax
 $color WLAN ${hr 1}
 # eth0:$color ${upspeed eth0} ${color grey} - Down:$color ${downspeed eth0}
-${color grey}${upspeed wlan0} ${alignr}${downspeed wlan0}
-${color grey}${downspeedgraph wlan0 32, 30}${alignr}${color grey}${upspeedgraph wlan0 32, 30}
-${color grey}${upspeed eth0} ${alignr}${downspeed eth0}
-${color grey}${downspeedgraph eth0 32, 30}${alignr}${color grey}${upspeedgraph eth0 32, 30}
+${color grey}${upspeed wlp3s0} ${alignr}${downspeed wlp3s0}
+${color grey}${downspeedgraph wlp3s0 32, 30}${alignr}${color grey}${upspeedgraph wlp3s0 32, 30}
+# ${color grey}${upspeed eth0} ${alignr}${downspeed eth0}
+# ${color grey}${downspeedgraph eth0 32, 30}${alignr}${color grey}${upspeedgraph eth0 32, 30}
 ${color grey}up ${alignr}down
 $color Disks ${hr 1}
 ${alignc} / ${color grey}${fs_used /}
