@@ -94,13 +94,19 @@ $color WLAN ${hr 1}
 # eth0:$color ${upspeed eth0} ${color grey} - Down:$color ${downspeed eth0}
 ${color grey}${upspeed wlp3s0} ${alignr}${downspeed wlp3s0}
 ${color grey}${downspeedgraph wlp3s0 32, 30}${alignr}${color grey}${upspeedgraph wlp3s0 32, 30}
-# ${color grey}${upspeed eth0} ${alignr}${downspeed eth0}
-# ${color grey}${downspeedgraph eth0 32, 30}${alignr}${color grey}${upspeedgraph eth0 32, 30}
 ${color grey}up ${alignr}down
 $color Disks ${hr 1}
-${alignc} / ${color grey}${fs_used /}
-${fs_used_perc}% ${fs_bar 6 /}
-${alignc} /home ${color grey}${fs_used /home}
-${fs_used_perc}% ${fs_bar 6 /home}
+${color #7CAFCE} / ${color #7CAFCE} ${color white}${fs_used_perc /}%
+${color #7CAFCE}${fs_bar /}
+$alignr ${color white}${fs_used /}
+${color #7CAFCE} /home ${color #7CAFCE} ${color white}${fs_used_perc /home}%
+${color #7CAFCE}${fs_bar /home}
+$alignr ${color white}${fs_used /home}
+${color #7CAFCE} /var ${color #7CAFCE} ${color white}${fs_used_perc /var}%
+${color #7CAFCE}${fs_bar /var}
+$alignr ${color white}${fs_used /var}
+${color #7CAFCE} /tmp ${color #7CAFCE} ${color white}${fs_used_perc /tmp}
+${color #7CAFCE}${fs_bar /tmp}
+$alignr ${color white}${fs_used /tmp}
 $hr
 ${alignc}$color $uptime

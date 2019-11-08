@@ -104,6 +104,8 @@ alias pd='pushd'
 alias d2='pushd +2'
 alias po='popd'
 
+alias xml='xmllint --format '
+
 # DOS-style aliases
 alias rd='rmdir'
 alias md='mkdir'
@@ -139,10 +141,9 @@ alias pd..='pd ..'
 
 # Some terminal aliases. It comes in handy to have some terms with
 # different colours. Names are just conventions from a project.
-alias gitterm='xterm -bg lightgreen -fg black'
-alias cdsterm='xterm -bg yellow -fg black'
-
-alias pyterm='xterm -T "iPython [`hostname`]" +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e ipython'
+alias gitterm='xterm -T git -bg lightgreen -fg black'
+alias pyterm='xterm -T "iPython [`hostname`]" +sb -fa Monoid -fs 11 -sl 5000 -bg black -fg white -e ipython'
+alias myterm='xterm -T "mySQL [`hostname`]" +sb -fa Monoid -fs 11 -sl 5000 -bg darkgreen -fg green -e sudo -u apache $ib/dbexec -i'
 alias perlterm='xterm -T "Perl [`hostname`]" +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e perl -d -e 1'
 
 # alias e='emacsclient -n -c'
