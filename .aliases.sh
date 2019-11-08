@@ -145,6 +145,10 @@ alias cdsterm='xterm -bg yellow -fg black'
 alias pyterm='xterm -T "iPython [`hostname`]" +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e ipython'
 alias perlterm='xterm -T "Perl [`hostname`]" +sb -fa Monospace -fs 12 -sl 5000 -bg black -fg white -e perl -d -e 1'
 
+# alias e='emacsclient -n -c'
+alias ekill="emacsclient -e '(client-save-kill-emacs)'"
+alias eforcekill="emacsclient -e '(kill-emacs)'"
+
 if [ -e $HOME/.aliases.sh.local ]; then 
 	source $HOME/.aliases.sh.local
 fi
