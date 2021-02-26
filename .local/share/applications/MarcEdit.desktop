@@ -1,0 +1,9 @@
+[Desktop Entry]
+Encoding=UTF-8
+version=7.2
+Name[en_US]=Marcedit
+GenericName=MarcEdit 7
+Exec=mono /tmp/marcedit/MarcEdit.exe
+Terminal=false
+Icon=/tmp/marcedit/icons/tools7.bmp
+Type=Application

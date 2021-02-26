@@ -1,0 +1,15 @@
+[Desktop Entry]
+Name=Anki
+Comment=An intelligent spaced-repetition memory training program
+GenericName=Flashcards
+Exec=/home/arwagner/bin/anki-2.1.35-linux-amd64/bin/anki
+TryExec=anki
+Icon=anki
+Categories=Education;Languages;KDE;Qt;
+Terminal=false
+Type=Application
+Version=1.0
+MimeType=application/x-apkg;application/x-anki;
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/anki.desktop
+Path=
+StartupNotify=false

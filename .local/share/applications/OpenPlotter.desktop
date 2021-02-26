@@ -1,0 +1,11 @@
+[Desktop Entry]
+Name=OpenPlotter
+Comment=OpenPlotter on Raspberry pi
+GenericName=OpenPlotter
+Exec=xtigervncviewer localhost :1 -via pi@openplotter
+TryExec=xtigervncviewer localhost :1 -via pi@openplotter
+Icon=openstreetmap
+Categories=Sailing
+Terminal=false
+Type=Application
+Version=1.0

@@ -1,0 +1,12 @@
+[Desktop Entry]
+Categories=System;
+Comment=Backup
+Exec=/bin/bash -c /home/arwagner/bin/generic/Back2Jupiter
+Icon=network-server
+Name=Backup to Jupiter
+Terminal=true
+Type=Application
+X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/Backup.desktop
+Path=
+StartupNotify=false

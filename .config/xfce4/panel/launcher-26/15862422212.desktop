@@ -1,0 +1,14 @@
+[Desktop Entry]
+X-AppInstall-Section=main
+Name=Bastion (DESY)
+Comment=Log in to bastion wito two shells one adding a tunnel on port 9150
+Exec=/home/arwagner/bin/generic/bastion
+Icon=octocat
+Terminal=false
+Type=Application
+Categories=System;
+X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
+Hidden=false
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/Bastion.desktop
+Path=
+StartupNotify=false

@@ -1,0 +1,14 @@
+[Desktop Entry]
+X-AppInstall-Section=main
+Name=DESY Homeoffice
+Comment=Add the usual tabs to Firefox
+Exec=/usr/bin/firefox --new-tab https://mail.desy.de --new-tab https://github.com/login --new-tab https://gitter.im --new-tab https://confluence.desy.de/login.action
+Icon=caffeine
+Terminal=false
+Type=Application
+Categories=System;
+X-AppInstall-Architectures=amd64,armel,armhf,i386,ia64,mips,mipsel,powerpc,s390,s390x,sparc
+Hidden=false
+X-XFCE-Source=file:///home/arwagner/.local/share/applications/Homeoffice.desktop
+Path=
+StartupNotify=false
