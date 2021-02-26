@@ -1,0 +1,14 @@
+show_frame=false
+fg_set=false
+bg_set=false
+timezone=
+width_set=true
+width=165
+height_set=false
+lines_vertically=true
+rotation=0
+data0=%a, %d. %b, %X
+font0=
+tooltip=[%V] %A %d %B %Y
+hib_timing=false
+
