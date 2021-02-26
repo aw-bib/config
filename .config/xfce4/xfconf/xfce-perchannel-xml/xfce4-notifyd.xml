@@ -6,22 +6,38 @@
   <property name="expire-timeout" type="int" value="5"/>
   <property name="applications" type="empty">
     <property name="known_applications" type="array">
+      <value type="string" value="Blueman"/>
       <value type="string" value="calibre"/>
+      <value type="string" value="calibre-gui"/>
+      <value type="string" value="chromium"/>
+      <value type="string" value="cloud-drive-ui"/>
       <value type="string" value="Electron"/>
+      <value type="string" value="Element"/>
       <value type="string" value="Firefox"/>
+      <value type="string" value="Florence"/>
       <value type="string" value="hplip"/>
+      <value type="string" value="Nextcloud"/>
       <value type="string" value="nm-applet"/>
+      <value type="string" value="ownCloud"/>
       <value type="string" value="owncloud"/>
       <value type="string" value="parole-notify"/>
       <value type="string" value="Pidgin"/>
       <value type="string" value="Skype"/>
+      <value type="string" value="System Config Printer Notification"/>
       <value type="string" value="Thunar"/>
       <value type="string" value="thunar-volman"/>
       <value type="string" value="Thunderbird"/>
       <value type="string" value="vpnui"/>
       <value type="string" value="Xfce volume control"/>
+      <value type="string" value="Xfce4-notifyd settings"/>
       <value type="string" value="xfce4-power-manager"/>
+      <value type="string" value="xfce4-settings-helper"/>
       <value type="string" value="xfdesktop"/>
     </property>
   </property>
+  <property name="primary-monitor" type="uint" value="0"/>
+  <property name="log-level" type="uint" value="0"/>
+  <property name="log-level-apps" type="uint" value="0"/>
+  <property name="do-not-disturb" type="bool" value="false"/>
+  <property name="do-slideout" type="bool" value="false"/>
 </channel>
