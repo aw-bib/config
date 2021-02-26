@@ -23,8 +23,8 @@
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #
 
-# alignment top_right
-alignment top_left
+alignment top_right
+# alignment top_left
 background no
 border_width 1
 cpu_avg_samples 2
@@ -85,8 +85,11 @@ ${color grey}${cpugraph cpu2}
 ${alignc}CPU2
 ${color grey}${cpugraph cpu3}
 ${alignc}CPU3
+$color Temp ${hr 1}
+${color grey}ACPI ${hwmon 0 temp 1}°C
+${color grey}GPU ${hwmon 1 temp 1}°C
 $color Mem ${hr 1}
-$color$memperc% ${color grey}$color ${membar 4}
+$color$memperc% $color ${membar 4}
 ${color grey}${alignc}$mem/$memmax
 $color $swapperc% ${color grey}$color${swapbar 4}
 ${color grey}${alignc}$swap/$swapmax
@@ -105,7 +108,7 @@ $alignr ${color white}${fs_used /home}
 ${color #7CAFCE} /var ${color #7CAFCE} ${color white}${fs_used_perc /var}%
 ${color #7CAFCE}${fs_bar /var}
 $alignr ${color white}${fs_used /var}
-${color #7CAFCE} /tmp ${color #7CAFCE} ${color white}${fs_used_perc /tmp}
+${color #7CAFCE} /tmp ${color #7CAFCE} ${color white}${fs_used_perc /tmp}%
 ${color #7CAFCE}${fs_bar /tmp}
 $alignr ${color white}${fs_used /tmp}
 $hr
